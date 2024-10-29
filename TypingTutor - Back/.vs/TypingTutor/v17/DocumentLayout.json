@@ -1,41 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\",
+  "WorkspaceRootPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|solutionrelative:typingtutor.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.application\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.application\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.application\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.application\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.application\\typingtutor.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.application\\typingtutor.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\typingtutor.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\besja\\onedrive\\desktop\\typingtutor\\typingtutor.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\besja\\onedrive\\documents\\github\\typingtutor\\typingtutor - back\\typingtutor.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,80 +50,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:50:45.073Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\appsettings.json",
+              "RelativeDocumentMoniker": "TypingTutor.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\appsettings.json",
+              "RelativeToolTip": "TypingTutor.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-29T21:04:13.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\Service\\UserService.cs",
-              "RelativeToolTip": "TypingTutor.Application\\Service\\UserService.cs",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:48:39.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:50:45.073Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\IService\\IUserService.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\IUserService.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\IService\\IUserService.cs",
-              "RelativeToolTip": "TypingTutor.Application\\IService\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\UserService.cs",
+              "RelativeToolTip": "TypingTutor.Application\\Service\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:48:18.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:48:39.799Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\IUserService.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\IUserService.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\IUserService.cs",
+              "RelativeToolTip": "TypingTutor.Application\\IService\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:47:56.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:48:18.347Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TypingTutor.Application",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\TypingTutor.Application.csproj",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\TypingTutor.Application.csproj",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\TypingTutor.Application.csproj",
-              "RelativeToolTip": "TypingTutor.Application\\TypingTutor.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-29T19:46:44.709Z",
-              "EditorCaption": ""
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:47:56.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "TypingTutor.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\TypingTutor.Application.csproj",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
+              "RelativeToolTip": "TypingTutor.Application\\TypingTutor.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-29T19:46:44.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Domain\\User.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\User.cs",
               "RelativeDocumentMoniker": "TypingTutor.Domain\\User.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Domain\\User.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\User.cs",
               "RelativeToolTip": "TypingTutor.Domain\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,42 +140,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Infrastructure\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Class1.cs",
               "RelativeToolTip": "TypingTutor.Infrastructure\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:31:41.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:31:41.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Class1.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\Class1.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Class1.cs",
               "RelativeToolTip": "TypingTutor.Application\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:30:42.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:30:42.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Domain\\Class1.cs",
+              "DocumentMoniker": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Class1.cs",
               "RelativeDocumentMoniker": "TypingTutor.Domain\\Class1.cs",
-              "ToolTip": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Class1.cs",
               "RelativeToolTip": "TypingTutor.Domain\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:29:06.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T19:29:06.653Z"
             }
           ]
         }

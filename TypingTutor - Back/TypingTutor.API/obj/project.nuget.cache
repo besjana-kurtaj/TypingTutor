@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rgOLJOjsAA0=",
+  "dgSpecHash": "22vcgRzeoHk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\TypingTutor.API.csproj",
+  "projectFilePath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\TypingTutor.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\besja\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\besja\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

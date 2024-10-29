@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj": {}
+    "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj": {
+    "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
+        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
         "projectName": "TypingTutor.Application",
-        "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
+        "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
         "packagesPath": "C:\\Users\\besja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\obj\\",
+        "outputPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\besja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
-                "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj"
+              "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
+                "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
+    "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
         "projectName": "TypingTutor.Domain",
-        "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
+        "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
         "packagesPath": "C:\\Users\\besja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\obj\\",
+        "outputPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\besja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj": {
+    "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj",
         "projectName": "TypingTutor.Infrastructure",
-        "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\besja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\besja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,8 +155,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj": {
-                "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj"
+              "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj": {
+                "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj"
               }
             }
           }

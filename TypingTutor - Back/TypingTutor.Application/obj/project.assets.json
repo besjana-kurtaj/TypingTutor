@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
+      "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
       "projectName": "TypingTutor.Application",
-      "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
+      "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj",
       "packagesPath": "C:\\Users\\besja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\obj\\",
+      "outputPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\besja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
-              "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj"
+            "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
+              "projectPath": "C:\\Users\\besja\\OneDrive\\Documents\\GitHub\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj"
             }
           }
         }
