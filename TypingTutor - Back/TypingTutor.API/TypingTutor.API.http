@@ -1,0 +1,6 @@
+@TypingTutor.API_HostAddress = http://localhost:5272
+
+GET {{TypingTutor.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
