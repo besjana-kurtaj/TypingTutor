@@ -1,0 +1,12 @@
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\bin\Debug\net8.0\TypingTutor.Domain.deps.json
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\bin\Debug\net8.0\TypingTutor.Domain.dll
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\bin\Debug\net8.0\TypingTutor.Domain.pdb
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.AssemblyInfoInputs.cache
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.AssemblyInfo.cs
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.csproj.CoreCompileInputs.cache
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.sourcelink.json
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.dll
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\refint\TypingTutor.Domain.dll
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.pdb
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\ref\TypingTutor.Domain.dll
