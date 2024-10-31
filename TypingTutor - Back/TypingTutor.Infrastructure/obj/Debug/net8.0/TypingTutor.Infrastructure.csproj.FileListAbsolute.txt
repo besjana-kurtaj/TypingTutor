@@ -16,3 +16,5 @@ C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTu
 C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Infrastructure\obj\Debug\net8.0\refint\TypingTutor.Infrastructure.dll
 C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Infrastructure\obj\Debug\net8.0\TypingTutor.Infrastructure.pdb
 C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Infrastructure\obj\Debug\net8.0\ref\TypingTutor.Infrastructure.dll
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Infrastructure\bin\Debug\net8.0\TypingTutor.Infrastructure.runtimeconfig.json
+C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTutor.Infrastructure\obj\Debug\net8.0\TypingTutor.Infrastructure.genruntimeconfig.cache
