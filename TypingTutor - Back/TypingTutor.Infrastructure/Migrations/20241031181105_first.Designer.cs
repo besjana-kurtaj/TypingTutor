@@ -11,7 +11,7 @@ using TypingTutor.Infrastructure;
 namespace TypingTutor.Infrastructure.Migrations
 {
     [DbContext(typeof(TypingTutorDbContext))]
-    [Migration("20241030204005_first")]
+    [Migration("20241031181105_first")]
     partial class first
     {
         /// <inheritdoc />

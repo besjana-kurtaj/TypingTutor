@@ -1,0 +1,121 @@
+/* Global styles for the game */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the main game container */
+.game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the target text */
+.target-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: border-color 0.3s;
+}
+
+/* Change border color on focus */
+input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Stats section styling */
+.stats {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Style for correct and incorrect characters */
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Start screen styles */
+.start-screen {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.start-screen button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #28a745;
+}
+
+.start-screen button:hover {
+    background-color: #218838;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .target-text {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .stats {
+        font-size: 16px;
+    }
+}
+.stats p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.stats p:first-of-type {
+    font-weight: bold;
+    color: #dc3545; /* Change color to red for the timer */
+}
+
+.timer-expired {
+    color: red;
+    font-weight: bold;
+}
