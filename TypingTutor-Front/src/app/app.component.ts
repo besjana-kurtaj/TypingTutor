@@ -11,4 +11,15 @@ import { GameComponent } from "./game/game.component";
 })
 export class AppComponent {
   title = 'TypingTutor-Front';
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    const navbar = document.querySelector('.navbar') as HTMLElement;
+    if (this.isMenuOpen) {
+      navbar.classList.add('show'); 
+    } else {
+      navbar.classList.remove('show'); // Remove class to hide the navbar
+    }
+  }
 }

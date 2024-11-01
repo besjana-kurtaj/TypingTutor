@@ -1,0 +1,104 @@
+.header {
+    background-color: #4a90e2; /* Light blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border-bottom: 2px solid #3c8dc5; /* Darker border at the bottom */
+    position: relative; /* For positioning the menu toggle */
+  }
+  
+  .header-content {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out elements */
+  }
+  
+  .logo h1 {
+    margin: 0; /* Remove margin */
+    font-size: 28px; /* Large title font */
+  }
+  
+  .navbar {
+    margin: 0; /* Remove margin */
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Space between menu items */
+  }
+  
+  .nav-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s; /* Smooth transition */
+  }
+  
+  .nav-link:hover {
+    color: #ffcc00; /* Change color on hover */
+  }
+  
+  .header-buttons {
+    display: flex; /* Align buttons in a row */
+  }
+  
+  .start-button {
+    background-color: #ffcc00; /* Yellow button */
+    color: #333; /* Dark text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    margin-left: 20px; /* Space between links and button */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .start-button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+  }
+  
+  .menu-toggle {
+    display: none; /* Hide toggle button initially */
+    background: none; /* Remove button background */
+    border: none; /* Remove border */
+    color: white; /* White color */
+    font-size: 24px; /* Font size for the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none; /* Hide navbar by default */
+      flex-direction: column; /* Stack items vertically */
+      position: absolute; /* Position navbar */
+      top: 60px; /* Position below header */
+      left: 0; /* Align to the left */
+      right: 0; /* Stretch to the right */
+      background-color: #4a90e2; /* Match header background */
+    }
+  
+    .navbar ul {
+      flex-direction: column; /* Stack links vertically */
+      padding: 10px 0; /* Add padding */
+    }
+  
+    .navbar li {
+      margin: 10px 0; /* Space between items */
+      text-align: center; /* Center items */
+    }
+  
+    .menu-toggle {
+      display: block; /* Show toggle button on mobile */
+    }
+  
+    .navbar.show {
+      display: flex; /* Show navbar when active */
+    }
+  }
+  
