@@ -9,30 +9,13 @@ using TypingTutor.Domain;
 
 namespace TypingTutor.Infrastructure.Repository
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : Repository<User>, IUserRepository
     {
-        private readonly TypingTutorDbContext _context;
+        public UserRepository(TypingTutorDbContext context) : base(context) { }
 
-        public UserRepository(TypingTutorDbContext context)
+        public async Task<User?> GetByEmailAsync(string email)
         {
-            _context = context;
-        }
-
-        public async Task<User> GetUserByIdAsync(int userId) => await _context.Users.FindAsync(userId);
-
-        public async Task<User> GetUserByUsernameAsync(string username) =>
-            await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
-
-        public async Task AddUserAsync(User user)
-        {
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task UpdateUserAsync(User user)
-        {
-            _context.Users.Update(user);
-            await _context.SaveChangesAsync();
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace TypingTutor.Domain
 {
-    public class User
+    public class User : IdentityUser
     {
-        public int Id { get; set; }
-        public string Username { get; set; } 
-        public string Password { get; set; }
-        public string Role { get; set; } 
-        public int CurrentLevel { get; set; }   
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        // Define any additional properties here, but do not redefine properties like UserName, Email, etc.
+        public ICollection<UserProgress> UserProgresses { get; set; }
+  
 
     }
 }

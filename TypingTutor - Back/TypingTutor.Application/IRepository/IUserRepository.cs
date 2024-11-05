@@ -7,11 +7,8 @@ using TypingTutor.Domain;
 
 namespace TypingTutor.Application.IRepository
 {
-    public interface IUserRepository
+    public interface IUserRepository : IRepository<User>
     {
-        Task<User> GetUserByIdAsync(int userId);
-        Task<User> GetUserByUsernameAsync(string username);
-        Task AddUserAsync(User user);
-        Task UpdateUserAsync(User user);
+        Task<User?> GetByEmailAsync(string email);
     }
 }

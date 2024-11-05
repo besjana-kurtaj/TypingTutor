@@ -1,26 +1,43 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using TypingTutor.Application.IService;
+using TypingTutor.API.Models;
+using TypingTutor.Application.Service;
 using TypingTutor.Domain;
 
 namespace TypingTutor.API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly IUserService _userService;
+        private readonly UserManager<User> _userManager;
+        private readonly AuthService _authService;
 
-        public AuthController(IUserService userService)
+        public AuthController(UserManager<User> userManager, AuthService authService)
         {
-            _userService = userService;
+            _userManager = userManager;
+            _authService = authService;
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] User loginDto)
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            var user = await _userService.AuthenticateAsync(loginDto.Username, loginDto.Password);
-            return Ok(user); 
+            var user = new User
+            {
+                Email = model.Email,
+                UserName = model.Username 
+            };
+
+            var result = await _userManager.CreateAsync(user, model.Password);
+
+            if (result.Succeeded)
+            {
+                return Ok("User registered successfully");
+            }
+
+            return BadRequest(result.Errors);
         }
     }
+
 }

@@ -9,7 +9,10 @@ namespace TypingTutor.Application.IService
 {
     public interface IUserService
     {
-        Task<User> AuthenticateAsync(string username, string password);
-        Task RegisterAsync(User user);
+        Task<User> RegisterUserAsync(User user);
+        Task<User?> GetUserByIdAsync(int id);
+        Task<IEnumerable<User>> GetAllUsersAsync();
+        Task UpdateUserAsync(User user);       
+        Task DeleteUserAsync(int id);
     }
 }

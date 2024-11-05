@@ -7,10 +7,6 @@ using TypingTutor.Domain;
 
 namespace TypingTutor.Application.IRepository
 {
-    public interface ILevelRepository
-    {
-        Task<IEnumerable<Level>> GetAllLevelsAsync();
-        Task<Level> GetLevelByIdAsync(int levelId);
-        Task AddLevelAsync(Level level);
-    }
+    public interface ILevelRepository : IRepository<Level> { }
+
 }

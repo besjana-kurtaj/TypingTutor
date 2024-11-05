@@ -7,10 +7,8 @@ using TypingTutor.Domain;
 
 namespace TypingTutor.Application.IRepository
 {
-    public interface IUserProgressRepository
+    public interface IUserProgressRepository : IRepository<UserProgress>
     {
-        Task<UserProgress> GetProgressByUserIdAndLevelIdAsync(int userId, int levelId);
-        Task AddProgressAsync(UserProgress progress);
-        Task UpdateProgressAsync(UserProgress progress);
+        Task<IEnumerable<UserProgress>> GetProgressByUserIdAsync(string userId);
     }
 }

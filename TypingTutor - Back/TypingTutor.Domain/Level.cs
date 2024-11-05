@@ -8,9 +8,10 @@ namespace TypingTutor.Domain
 {
     public class Level
     {
-        public int Id { get; set; }
-        public string Text { get; set; }
-        public int TimeLimit { get; set; }
-        public int Complexity { get; set; }
+        public int LevelId { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int Difficulty { get; set; }
+
+        public ICollection<Lesson> Lessons { get; set; }
     }
 }

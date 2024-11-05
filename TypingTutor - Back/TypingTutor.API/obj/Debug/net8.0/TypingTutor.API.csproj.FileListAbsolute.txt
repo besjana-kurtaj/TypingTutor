@@ -158,8 +158,17 @@ C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\n
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\TypingTutor.API.pdb
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\EntityFramework.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -174,6 +183,8 @@ C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\n
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

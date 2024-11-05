@@ -18,24 +18,29 @@ namespace TypingTutor.Application.Service
             _userRepository = userRepository;
         }
 
-        public async Task<User> AuthenticateAsync(string username, string password)
+        public async Task<User> RegisterUserAsync(User user)
         {
-            var user = await _userRepository.GetUserByUsernameAsync(username);
-            if (user == null || user.Password != HashPassword(password))
-                throw new UnauthorizedAccessException("Invalid credentials");
-            return user;
+            return await _userRepository.AddAsync(user);
         }
 
-        public async Task RegisterAsync(User user)
+        public async Task<User?> GetUserByIdAsync(int id)
         {
-            user.Password = HashPassword(user.Password);
-            await _userRepository.AddUserAsync(user);
+            return await _userRepository.GetByIdAsync(id);
         }
 
-        private string HashPassword(string password)
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            // Implement a hashing algorithm here
-            return password; // Placeholder
+            return await _userRepository.GetAllAsync();
+        }
+        public async Task UpdateUserAsync(User user)      
+        {
+            await _userRepository.UpdateAsync(user);
+        }
+
+        public async Task DeleteUserAsync(int id)        
+        {
+            await _userRepository.DeleteAsync(id);
         }
     }
+
 }

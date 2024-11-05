@@ -13,6 +13,7 @@ C:\Users\besja\OneDrive\Documents\GitHub\TypingTutor\TypingTutor - Back\TypingTu
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\bin\Debug\net8.0\TypingTutor.Domain.deps.json
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\bin\Debug\net8.0\TypingTutor.Domain.dll
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\bin\Debug\net8.0\TypingTutor.Domain.pdb
+C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.csproj.AssemblyReference.cache
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.AssemblyInfoInputs.cache
 C:\Users\Kiki\Desktop\TypingTutor\TypingTutor - Back\TypingTutor.Domain\obj\Debug\net8.0\TypingTutor.Domain.AssemblyInfo.cs
