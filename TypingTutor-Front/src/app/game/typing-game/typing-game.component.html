@@ -1,0 +1,46 @@
+<div class="typing-game-container">
+    <h2>Typing Game - Level {{ levelId }}</h2>
+  
+    <!-- Display Metrics -->
+    <div class="metrics">
+      <p><strong>Speed:</strong> {{ speed }} WPM</p>
+      <p><strong>Accuracy:</strong> {{ accuracy }}%</p>
+      <p><strong>Errors:</strong> {{ errors }}</p>
+      <p><strong>Score:</strong> {{ score }}</p>
+      <p><strong>Time Left:</strong> {{ timer }} seconds</p>
+    </div>
+  
+    <!-- Text to Type with Real-Time Highlighting -->
+    <div class="text-to-type">
+      <span *ngFor="let char of textToType.split(''); let i = index">
+        <span 
+          [ngClass]="{
+            'correct': userInput[i] === char,
+            'incorrect': userInput[i] && userInput[i] !== char,
+            'current': i === userInput.length
+          }"
+        >
+          {{ char }}
+        </span>
+      </span>
+    </div>
+  
+    <!-- Typing Input -->
+    <div class="typing-input">
+      <input 
+        type="text" 
+        [(ngModel)]="userInput" 
+        (input)="onType($event)" 
+        placeholder="Start typing here..." 
+        [disabled]="levelCompleted"
+        autofocus 
+      />
+    </div>
+  
+    <!-- Completion Message and Next Level Button -->
+    <div *ngIf="levelCompleted" class="completion-message">
+      <p>Level {{ levelId }} completed!</p>
+      <button (click)="loadNextLevel()">Next Level</button>
+    </div>
+  </div>
+  

@@ -1,36 +1,13 @@
 
 <header class="header">
-  <div class="header-content">
-    <div class="logo">
-      <h1>Typing Tutor</h1>
-    </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Login</a></li>
-        <li><a href="#" class="nav-link">Levels</a></li>
-        <li><a href="#" class="nav-link">About</a></li>
-        <li><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-buttons">
-      <button class="start-button">Start Game</button>
-    </div>
-    <button class="menu-toggle" aria-label="Toggle menu" (click)="toggleMenu()">&#9776;</button>
+  <div class="logo">
+    <a routerLink="/" class="logo-link">TypingTutor</a>
   </div>
+  <nav class="nav">
+    <a routerLink="/get-started" class="nav-item">Get Started</a>
+    <button mat-button class="login-button" routerLink="/login">Login</button>
+  </nav>
 </header>
-
-
-
-<app-game></app-game>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
 <router-outlet />

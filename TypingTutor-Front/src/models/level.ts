@@ -1,6 +1,7 @@
 export interface Level {
-    id: number;
-    text: string;
-    timeLimit: number;
-    complexity: number;
+    levelId?: number;
+    name: string;
+    difficulty: number;
+    timeLimitInSeconds: number;
+    description?: string;
   }

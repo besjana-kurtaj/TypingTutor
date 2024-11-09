@@ -1,0 +1,36 @@
+<!-- src/app/components/level-form/level-form.component.html -->
+<mat-card class="form-card">
+    <mat-card-title class="form-title">Add Level</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="saveLevel()" class="level-form">
+        <!-- Name Field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Enter level name" [(ngModel)]="level.name" name="name" required />
+        </mat-form-field>
+  
+        <!-- Difficulty Field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Difficulty</mat-label>
+          <input matInput type="number" placeholder="Enter difficulty level" [(ngModel)]="level.difficulty" name="difficulty" required />
+        </mat-form-field>
+  
+        <!-- Time Limit Field -->
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Time Limit (seconds)</mat-label>
+          <input matInput type="number" placeholder="Enter time limit" [(ngModel)]="level.timeLimitInSeconds" name="timeLimit" required />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Përshkrimi</mat-label>
+            <textarea matInput placeholder="Shto një përshkrim për nivelin" [(ngModel)]="level.description" name="description"></textarea>
+          </mat-form-field>
+    
+        <!-- Button Group -->
+        <div class="button-group">
+          <button mat-raised-button color="primary" type="submit">Add Level</button>
+          <button mat-button color="warn" type="button" (click)="cancel()">Cancel</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  
