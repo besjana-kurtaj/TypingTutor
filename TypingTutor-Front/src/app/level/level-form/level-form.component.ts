@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './level-form.component.css'
 })
 export class LevelFormComponent {
-  level: Level = { levelId: 0, name: '', difficulty: 1, timeLimitInSeconds: 60 , description:''};
+  level: Level = { levelId: 0, name: '', difficulty: 0, timeLimitInSeconds: 60 , description:''};
   isEditMode: boolean = false;
 
   constructor(
@@ -30,7 +30,8 @@ export class LevelFormComponent {
 
   saveLevel(): void {
     if (this.isEditMode) {
-      this.levelService.updateLevel(0, this.level).subscribe(() => {
+      const levelId = this.level?.levelId ?? 0;
+      this.levelService.updateLevel(levelId, this.level).subscribe(() => {
         this.router.navigate(['/levels']);
       });
     } else {

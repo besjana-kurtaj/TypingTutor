@@ -9,7 +9,7 @@ namespace TypingTutor.Infrastructure
         public TypingTutorDbContext(DbContextOptions<TypingTutorDbContext> options) : base(options) { }
 
         // Define additional DbSets for other entities
-        public DbSet<Lesson> Lessons { get; set; }
+        // public DbSet<Lesson> Lessons { get; set; }
         public DbSet<Level> Levels { get; set; }
         public DbSet<UserProgress> UserProgresses { get; set; }
 
@@ -26,10 +26,11 @@ namespace TypingTutor.Infrastructure
                 .WithMany(u => u.UserProgresses)
                 .HasForeignKey(up => up.UserId);
 
-            modelBuilder.Entity<UserProgress>()
-                .HasOne(up => up.Lesson)
-                .WithMany(l => l.UserProgresses)
-                .HasForeignKey(up => up.LessonId);
+            //modelBuilder.Entity<UserProgress>()
+            //    .HasOne(up => up.Lesson)
+            //    .WithMany(l => l.UserProgresses)
+            //    .HasForeignKey(up => up.LessonId);
         }
     }
+
 }

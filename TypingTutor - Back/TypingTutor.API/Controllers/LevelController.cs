@@ -29,6 +29,12 @@ namespace TypingTutor.API.Controllers
             var level = await _levelService.GetLevelByIdAsync(id);
             return level == null ? NotFound() : Ok(level);
         }
+        [HttpGet("next/{id}")]
+        public async Task<IActionResult> GetNextLevel(int id)
+        {
+            var nextLevel =  _levelService.GetNextLevelAsync(id);
+            return nextLevel == null ? NotFound("No more levels") : Ok(nextLevel);
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAllLevels()

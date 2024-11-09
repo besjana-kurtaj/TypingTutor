@@ -155,32 +155,6 @@ namespace TypingTutor.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("TypingTutor.Domain.Lesson", b =>
-                {
-                    b.Property<int>("LessonId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LessonId"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("LevelId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("LessonId");
-
-                    b.HasIndex("LevelId");
-
-                    b.ToTable("Lessons");
-                });
-
             modelBuilder.Entity("TypingTutor.Domain.Level", b =>
                 {
                     b.Property<int>("LevelId")
@@ -189,12 +163,19 @@ namespace TypingTutor.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LevelId"));
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Difficulty")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TimeLimitInSeconds")
+                        .HasColumnType("int");
 
                     b.HasKey("LevelId");
 
@@ -287,7 +268,7 @@ namespace TypingTutor.Infrastructure.Migrations
                     b.Property<DateTime>("CompletionDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("LessonId")
+                    b.Property<int>("LevelId")
                         .HasColumnType("int");
 
                     b.Property<double>("Speed")
@@ -299,7 +280,7 @@ namespace TypingTutor.Infrastructure.Migrations
 
                     b.HasKey("UserProgressId");
 
-                    b.HasIndex("LessonId");
+                    b.HasIndex("LevelId");
 
                     b.HasIndex("UserId");
 
@@ -357,22 +338,11 @@ namespace TypingTutor.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TypingTutor.Domain.Lesson", b =>
-                {
-                    b.HasOne("TypingTutor.Domain.Level", "Level")
-                        .WithMany("Lessons")
-                        .HasForeignKey("LevelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Level");
-                });
-
             modelBuilder.Entity("TypingTutor.Domain.UserProgress", b =>
                 {
-                    b.HasOne("TypingTutor.Domain.Lesson", "Lesson")
-                        .WithMany("UserProgresses")
-                        .HasForeignKey("LessonId")
+                    b.HasOne("TypingTutor.Domain.Level", "Level")
+                        .WithMany()
+                        .HasForeignKey("LevelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -382,19 +352,9 @@ namespace TypingTutor.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Lesson");
+                    b.Navigation("Level");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TypingTutor.Domain.Lesson", b =>
-                {
-                    b.Navigation("UserProgresses");
-                });
-
-            modelBuilder.Entity("TypingTutor.Domain.Level", b =>
-                {
-                    b.Navigation("Lessons");
                 });
 
             modelBuilder.Entity("TypingTutor.Domain.User", b =>

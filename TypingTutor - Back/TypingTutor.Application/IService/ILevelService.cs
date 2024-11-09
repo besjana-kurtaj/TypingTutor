@@ -14,5 +14,6 @@ namespace TypingTutor.Application.IService
         Task<IEnumerable<Level>> GetAllLevelsAsync();
         Task UpdateLevelAsync(Level level);
         Task DeleteLevelAsync(int id);
+        Task GetNextLevelAsync(int currentId);
     }
 }

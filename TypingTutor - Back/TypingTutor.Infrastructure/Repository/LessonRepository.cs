@@ -15,7 +15,7 @@ namespace TypingTutor.Infrastructure.Repository
 
         public async Task<IEnumerable<Lesson>> GetLessonsByLevelAsync(int levelId)
         {
-            return await _context.Lessons.Where(l => l.LevelId == levelId).ToListAsync();
+            return null;
         }
     }
 }

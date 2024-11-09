@@ -16,7 +16,7 @@ namespace TypingTutor.Infrastructure.Repository
         public async Task<IEnumerable<UserProgress>> GetProgressByUserIdAsync(string userId)
         {
             return await _context.UserProgresses
-                                 .Include(up => up.Lesson)
+                                 .Include(up => up.Level)
                                  .Where(up => up.UserId == userId)
                                  .ToListAsync();
         }

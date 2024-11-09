@@ -14,10 +14,16 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'; // <-- Add this line
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { TypingGameComponent } from './game/typing-game/typing-game.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './game/dashboard/dashboard.component';
+import { EndOfGameComponent } from './game/end-of-game/end-of-game.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -25,7 +31,9 @@ import { TypingGameComponent } from './game/typing-game/typing-game.component';
     LevelListComponent,
     LevelFormComponent,
     HomeComponent,
-    TypingGameComponent
+    TypingGameComponent,
+    DashboardComponent,
+    EndOfGameComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +44,13 @@ import { TypingGameComponent } from './game/typing-game/typing-game.component';
     MatCardModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatInputModule, // <-- Add this to imports
+    MatInputModule, 
     HttpClientModule,  
     FormsModule,
+    MatSelectModule,
+    MatOptionModule,
+    BrowserAnimationsModule ,
+    MatGridListModule
   ],
   providers: [
     provideHttpClient(withFetch())

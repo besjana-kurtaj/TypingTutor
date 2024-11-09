@@ -1,0 +1,15 @@
+<div class="dashboard">
+    <h2>Përparimi i Përdoruesit</h2>
+  
+    <div *ngIf="userProgress">
+      <p><strong>Level:</strong> {{ userProgress.levelId }}</p>
+      <p><strong>Shpejtësia:</strong> {{ userProgress.speed }} WPM</p>
+      <p><strong>Saktësia:</strong> {{ userProgress.accuracy }}%</p>
+      <p><strong>Data e Përfundimit:</strong> {{ userProgress.completionDate | date:'short' }}</p>
+    </div>
+  
+    <button mat-raised-button color="primary" (click)="loadNextLevel()">
+      Niveli Tjetër
+    </button>
+  </div>
+  

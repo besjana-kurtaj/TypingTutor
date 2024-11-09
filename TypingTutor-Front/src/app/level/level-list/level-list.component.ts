@@ -9,7 +9,7 @@ import { Level } from '../../../models/level';
 })
 export class LevelListComponent {
   levels: Level[] = [];
-  displayedColumns: string[] = ['name', 'difficulty', 'timeLimit', 'actions'];
+  displayedColumns: string[] = ['name', 'difficulty', 'timeLimitInSeconds', 'actions'];
   constructor(private levelService: LevelService) {}
 
   ngOnInit(): void {
@@ -19,6 +19,7 @@ export class LevelListComponent {
   loadLevels(): void {
     this.levelService.getLevels().subscribe((data) => {
       this.levels = data;
+      console.log(this.levels)
     });
   }
 

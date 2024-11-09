@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,12 @@ namespace TypingTutor.Infrastructure.Repository
     {
         public LevelRepository(TypingTutorDbContext context) : base(context) { }
 
-     
+        public async Task<Level> GetNextLevelAsync(int currentId)
+        {
+            return await _context.Levels
+                .Where(level => level.LevelId > currentId)    
+                .OrderBy(level => level.LevelId)              
+                .FirstOrDefaultAsync();                  
+        }
     }
 }

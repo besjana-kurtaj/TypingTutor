@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TypingGameService } from '../../../service/typing-game.service';
 import { interval, Subscription } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-typing-game',
@@ -8,7 +9,7 @@ import { interval, Subscription } from 'rxjs';
   styleUrl: './typing-game.component.css'
 })
 export class TypingGameComponent {
-  levelId: number = 9; // Start at level 1
+  levelId: number = 1; // Start at level 1
   textToType: string = '';
   userInput: string = '';
   speed: number = 0;
@@ -19,12 +20,16 @@ export class TypingGameComponent {
   timeLimitInSeconds: number = 60; // Default, will be overwritten by level data
   countdownSubscription: Subscription | null = null;
   levelCompleted: boolean = false;
-  userId: string = "f1f43ee1-349c-4c1e-8cda-6c29d428f158"; // Static user ID for testing
+  userId: string = "cb55ad00-177b-484e-86fc-56b4cb9f86b1"; // Static user ID for testing
 
-  constructor(private typingGameService: TypingGameService) {}
+  constructor(private typingGameService: TypingGameService, private router: Router,private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.loadLevelData(this.levelId);
+    this.route.queryParams.subscribe(params => {
+      this.levelId = params['levelId'] ? +params['levelId'] : 1;
+      this.loadLevelData(this.levelId);
+    });
+   
   }
 
   ngOnDestroy(): void {
@@ -41,9 +46,11 @@ export class TypingGameComponent {
         this.startGame();
       } else {
         console.error("Invalid level data or no more levels.");
+        this.router.navigate(['/end-of-game']); 
       }
     }, error => {
       console.error('Error loading level data:', error);
+      this.router.navigate(['/end-of-game']); 
     });
   }
 
@@ -91,7 +98,7 @@ export class TypingGameComponent {
   completeLevel(): void {
     this.levelCompleted = true;
     this.countdownSubscription?.unsubscribe();
-
+  
     // Prepare UserProgress data
     const userProgress = {
       userId: this.userId,
@@ -100,10 +107,13 @@ export class TypingGameComponent {
       accuracy: this.accuracy,
       completionDate: new Date()
     };
-
+  
     // Save progress to backend
     this.typingGameService.saveProgress(userProgress).subscribe(response => {
       console.log(`Progress saved for Level ${this.levelId}:`, response);
+  
+      // Navigate to the dashboard with user progress data
+      this.router.navigate(['/dashboard'], { queryParams: { userProgress: JSON.stringify(userProgress) } });
     }, error => {
       console.error('Error saving progress:', error);
     });
