@@ -1,15 +1,44 @@
 <div class="dashboard">
-    <h2>Përparimi i Përdoruesit</h2>
+  <h2>Përparimi i Përdoruesit</h2>
   
-    <div *ngIf="userProgress">
-      <p><strong>Level:</strong> {{ userProgress.levelId }}</p>
-      <p><strong>Shpejtësia:</strong> {{ userProgress.speed }} WPM</p>
-      <p><strong>Saktësia:</strong> {{ userProgress.accuracy }}%</p>
-      <p><strong>Data e Përfundimit:</strong> {{ userProgress.completionDate | date:'short' }}</p>
-    </div>
-  
-    <button mat-raised-button color="primary" (click)="loadNextLevel()">
-      Niveli Tjetër
-    </button>
+  <div class="dashboard-cards">
+    <mat-card class="dashboard-card">
+      <mat-card-title>Shpejtësia</mat-card-title>
+      <mat-card-content>
+        <p>{{ userProgress.speed }} WPM</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="dashboard-card">
+      <mat-card-title>Saktësia</mat-card-title>
+      <mat-card-content>
+        <p>{{ userProgress.accuracy }}%</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="dashboard-card">
+      <mat-card-title>Gabime</mat-card-title>
+      <mat-card-content>
+        <p>{{ userProgress.errors }}</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="dashboard-card">
+      <mat-card-title>Niveli</mat-card-title>
+      <mat-card-content>
+        <p>{{ userProgress.levelNumber }}</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="dashboard-card">
+      <mat-card-title>Data e përfundimit</mat-card-title>
+      <mat-card-content>
+        <p>{{ userProgress.completionDate | date:'short' }}</p>
+      </mat-card-content>
+    </mat-card>
   </div>
   
+  <button mat-raised-button color="primary" (click)="loadNextLevel()">
+    Niveli tjetër
+  </button>
+</div>

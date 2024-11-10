@@ -42,9 +42,9 @@ namespace TypingTutor.Application.Service
         {
             await _levelRepository.DeleteAsync(id);
         }
-        public async Task GetNextLevelAsync(int currentId)
+        public async Task GetNextLevelAsync(int levelNumber)
         {
-            await _levelRepository.GetNextLevelAsync(currentId);                  
+            await _levelRepository.GetNextLevelAsync(levelNumber);                  
         }
     }
 

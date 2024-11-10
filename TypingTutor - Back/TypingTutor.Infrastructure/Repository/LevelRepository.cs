@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TypingTutor.Application.Dto;
 using TypingTutor.Application.IRepository;
 using TypingTutor.Domain;
 
@@ -13,12 +14,32 @@ namespace TypingTutor.Infrastructure.Repository
     {
         public LevelRepository(TypingTutorDbContext context) : base(context) { }
 
-        public async Task<Level> GetNextLevelAsync(int currentId)
+        public async Task<LevelDto> GetNextLevelAsync(int levelNumber)
         {
-            return await _context.Levels
-                .Where(level => level.LevelId > currentId)    
-                .OrderBy(level => level.LevelId)              
-                .FirstOrDefaultAsync();                  
+            try
+            {
+                var level = await _context.Levels
+       .Where(l => l.LevelNumber > levelNumber)
+       .OrderBy(l => l.LevelNumber)
+       .FirstOrDefaultAsync();
+
+                if (level == null) return null;
+
+                return new LevelDto
+                {
+                    LevelId=level.LevelId,
+                    LevelNumber = level.LevelNumber,
+                    Name = level.Name,
+                    Description = level.Description,
+                    Difficulty = level.Difficulty,
+                    TimeLimitInSeconds = level.TimeLimitInSeconds
+                };
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+          
         }
     }
 }

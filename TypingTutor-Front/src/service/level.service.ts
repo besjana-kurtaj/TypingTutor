@@ -18,7 +18,11 @@ export class LevelService {
   getLevelById(id: number): Observable<Level> {
     return this.http.get<Level>(`${this.apiUrl}/${id}`);
   }
-
+  getNextLevel(levelNumber: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/next`, {
+      params: { levelNumber: levelNumber.toString() }
+    });
+  }
   addLevel(level: Level): Observable<Level> {
     return this.http.post<Level>(this.apiUrl, level);
   }

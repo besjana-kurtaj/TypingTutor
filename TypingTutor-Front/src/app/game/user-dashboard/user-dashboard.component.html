@@ -1,0 +1,52 @@
+<div class="dashboard" *ngIf="userProgress">
+    <h2 class="dashboard-title">Paneli i Përmbledhjes së Progresit të Përdoruesit</h2>
+
+    <div class="summary-cards">
+      <mat-card class="summary-card">
+        <mat-card-title class="card-title">Mesatarja e Shpejtësisë</mat-card-title>
+        <mat-card-content class="card-content">{{ userProgress.averageSpeed | number:'1.0-1' }} WPM</mat-card-content>
+      </mat-card>
+  
+      <mat-card class="summary-card">
+        <mat-card-title class="card-title">Mesatarja e Saktësisë</mat-card-title>
+        <mat-card-content class="card-content">{{ userProgress.averageAccuracy | number:'1.0-1' }}%</mat-card-content>
+      </mat-card>
+  
+      <mat-card class="summary-card">
+        <mat-card-title class="card-title">Mesatarja e Gabimeve</mat-card-title>
+        <mat-card-content class="card-content">{{ userProgress.averageErrors | number:'1.0-1' }}</mat-card-content>
+      </mat-card>
+  
+      <mat-card class="summary-card">
+        <mat-card-title class="card-title">Niveli Maksimal</mat-card-title>
+        <mat-card-content class="card-content">Niveli {{ userProgress.maxLevel }}</mat-card-content>
+      </mat-card>
+    </div>
+  
+    <h3 class="performance-history-title">Historia e Performancës</h3>
+    <table mat-table [dataSource]="performanceData" class="mat-elevation-z8">
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Data </th>
+        <td mat-cell *matCellDef="let element"> {{ element.completionDate | date:'short' }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="speed">
+        <th mat-header-cell *matHeaderCellDef> Shpejtësia (WPM) </th>
+        <td mat-cell *matCellDef="let element"> {{ element.speed }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="accuracy">
+        <th mat-header-cell *matHeaderCellDef> Saktësia (%) </th>
+        <td mat-cell *matCellDef="let element"> {{ element.accuracy }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="errors">
+        <th mat-header-cell *matHeaderCellDef> Gabimet </th>
+        <td mat-cell *matCellDef="let element"> {{ element.errors }} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  

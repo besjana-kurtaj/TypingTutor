@@ -1,43 +1,44 @@
 <mat-card class="form-card">
-  <mat-card-title class="form-title">Add Level</mat-card-title>
+  <mat-card-title class="form-title">Shto nivel</mat-card-title>
   <mat-card-content>
     <form (ngSubmit)="saveLevel()" class="level-form">
-      <!-- Name Field -->
-      <mat-form-field appearance="outline" class="full-width">
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="Enter level name" [(ngModel)]="level.name" name="name" required />
-      </mat-form-field>
-
-      <!-- Flexbox Container for Difficulty and Time Limit -->
       <div class="flex-container">
-        <!-- Difficulty Field -->
         <mat-form-field appearance="outline" class="half-width">
-          <mat-label>Difficulty</mat-label>
-          <mat-select [(ngModel)]="level.difficulty" name="difficulty" required>
-            <mat-option [value]="0">Select Difficulty</mat-option>
-            <mat-option [value]="1">Low</mat-option>
-            <mat-option [value]="2">Medium</mat-option>
-            <mat-option [value]="3">High</mat-option>
-          </mat-select>
+          <mat-label>Numri i nivelit</mat-label>
+          <input matInput type="number" placeholder="Shkruani numrin e nivelit" [(ngModel)]="level.levelNumber" name="number" required />
         </mat-form-field>
 
-        <!-- Time Limit Field -->
         <mat-form-field appearance="outline" class="half-width">
-          <mat-label>Time Limit (seconds)</mat-label>
-          <input matInput type="number" placeholder="Enter time limit" [(ngModel)]="level.timeLimitInSeconds" name="timeLimit" required />
+          <mat-label>Emri</mat-label>
+          <input matInput placeholder="Shkruani emrin e nivelit" [(ngModel)]="level.name" name="name" required />
         </mat-form-field>
       </div>
 
-      <!-- Description Field -->
+      <div class="flex-container">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Vështirësia</mat-label>
+          <mat-select [(ngModel)]="level.difficulty" name="difficulty" required>
+            <mat-option [value]="0">Zgjidhni vështirësinë</mat-option>
+            <mat-option [value]="1">E ulët</mat-option>
+            <mat-option [value]="2">Mesatare</mat-option>
+            <mat-option [value]="3">E lartë</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>Kohëzgjatja (sekonda)</mat-label>
+          <input matInput type="number" placeholder="Shkruani kohëzgjatjen" [(ngModel)]="level.timeLimitInSeconds" name="timeLimit" required />
+        </mat-form-field>
+      </div>
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Përshkrimi</mat-label>
         <textarea matInput placeholder="Shto një përshkrim për nivelin" [(ngModel)]="level.description" name="description"></textarea>
       </mat-form-field>
 
-      <!-- Button Group -->
       <div class="button-group">
-        <button mat-raised-button color="primary" type="submit">Add Level</button>
-        <button mat-button color="warn" type="button" (click)="cancel()">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">Shto nivel</button>
+        <button mat-button color="warn" type="button" (click)="cancel()">Anulo</button>
       </div>
     </form>
   </mat-card-content>

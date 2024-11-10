@@ -170,6 +170,9 @@ namespace TypingTutor.Infrastructure.Migrations
                     b.Property<int>("Difficulty")
                         .HasColumnType("int");
 
+                    b.Property<int>("LevelNumber")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -267,6 +270,9 @@ namespace TypingTutor.Infrastructure.Migrations
 
                     b.Property<DateTime>("CompletionDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("Errors")
+                        .HasColumnType("int");
 
                     b.Property<int>("LevelId")
                         .HasColumnType("int");

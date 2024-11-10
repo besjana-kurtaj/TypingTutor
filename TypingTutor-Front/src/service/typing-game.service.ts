@@ -18,4 +18,18 @@ export class TypingGameService {
   saveProgress(progressData: any): Observable<any> {
     return this.http.post('https://localhost:7291/api/UserProgress', progressData);
   }
+  getCurrentProgress(userId: string): Observable<any> {
+    return this.http.get<any>(`${this.userProgressApiUrl}/${userId}/current`);
+  }
+
+  getPerformanceHistory(userId: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.userProgressApiUrl}/${userId}/history`);
+  }
+  getAllUsersPerformanceHistory(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.userProgressApiUrl}/all-history`);
+  }
+
+  getOverallUserStatistics(): Observable<any> {
+    return this.http.get<any>(`${this.userProgressApiUrl}/statistics`);
+  }
 }

@@ -9,6 +9,7 @@ namespace TypingTutor.Domain
     public class Level
     {
         public int LevelId { get; set; }
+        public int LevelNumber { get; set; }
         public string Name { get; set; } = string.Empty;
         public int Difficulty { get; set; }
         public int TimeLimitInSeconds { get; set; } = 0;

@@ -4,4 +4,5 @@ export interface Level {
     difficulty: number;
     timeLimitInSeconds: number;
     description?: string;
+    levelNumber?:number;
   }

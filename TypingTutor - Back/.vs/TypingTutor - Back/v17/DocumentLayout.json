@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\levelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\repository\\levelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\userprogressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\repository\\userprogressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.api\\controllers\\userprogresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|solutionrelative:typingtutor.api\\controllers\\userprogresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|solutionrelative:typingtutor.api\\controllers\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\iservice\\ilevelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\iservice\\ilevelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\dto\\leveldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\dto\\leveldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\service\\levelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,12 +31,47 @@
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\irepository\\ilevelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\levelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\repository\\levelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\iservice\\ilevelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\iservice\\ilevelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|solutionrelative:typingtutor.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.domain\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.domain\\userprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\userprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\irepository\\iuserprogressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\irepository\\iuserprogressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiki\\AppData\\Local\\SourceServer\\8b9abe0fb85525eb6da950e202dbf518a3709f4fb53d7f38b458e748f69b1900\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\dto\\userstatisticsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\dto\\userstatisticsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\dto\\userprogresssummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\dto\\userprogresssummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Migrations\\20241110173036_add-new-property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TypingTutor.Infrastructure\\Migrations\\20241110173036_add-new-property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\dto\\userprogressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\dto\\userprogressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,22 +80,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.domain\\userprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\userprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.domain\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\userprogressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\repository\\userprogressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Migrations\\20241109172700_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TypingTutor.Infrastructure\\Migrations\\20241109172700_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +92,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.domain\\typingtutor.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\typingtutor.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\dto\\userprogressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\dto\\userprogressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\typingtutordbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,20 +146,12 @@
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\iservice\\ilessonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{794E5F47-C9FE-4036-BCD9-87E8344772DC}|TypingTutor.API\\TypingTutor.API.csproj|solutionrelative:typingtutor.api\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.application\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF89C42C-FA45-4F63-B2BF-92795AE86E15}|TypingTutor.Application\\TypingTutor.Application.csproj|solutionrelative:typingtutor.application\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,6 +164,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.domain\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB721125-C3A5-43D3-9D18-FA7BAE0400EB}|TypingTutor.Domain\\TypingTutor.Domain.csproj|solutionrelative:typingtutor.domain\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|c:\\users\\kiki\\desktop\\typingtutor\\typingtutor - back\\typingtutor.infrastructure\\migrations\\20241109172700_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8899885E-4642-4EA3-AD42-AFBFF3FB9027}|TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj|solutionrelative:typingtutor.infrastructure\\migrations\\20241109172700_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,110 +177,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 392,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:05:16.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IUserProgressRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
-              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAkwAsAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:06:37.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ILevelRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\ILevelRepository.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\ILevelRepository.cs",
               "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\ILevelRepository.cs",
               "RelativeToolTip": "TypingTutor.Application\\IRepository\\ILevelRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T19:06:04.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
+              "Title": "LessonController.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LessonController.cs",
+              "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\LessonController.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LessonController.cs",
+              "RelativeToolTip": "TypingTutor.API\\Controllers\\LessonController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:47:58.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Level.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Level.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Domain\\Level.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Level.cs",
+              "RelativeToolTip": "TypingTutor.Domain\\Level.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:04:09.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LevelDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\LevelDto.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\Dto\\LevelDto.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\LevelDto.cs",
+              "RelativeToolTip": "TypingTutor.Application\\Dto\\LevelDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:14:08.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserProgressRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
+              "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAADkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:33:45.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LevelRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\LevelRepository.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\LevelRepository.cs",
               "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\LevelRepository.cs",
               "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\LevelRepository.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBQAAAAtAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwBEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T19:39:29.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserProgressController.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\UserProgressController.cs",
               "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\UserProgressController.cs",
               "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\UserProgressController.cs",
               "RelativeToolTip": "TypingTutor.API\\Controllers\\UserProgressController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAswBUAAAAIAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T19:51:37.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LevelService.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\LevelService.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\LevelService.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\LevelService.cs",
-              "RelativeToolTip": "TypingTutor.Application\\Service\\LevelService.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAswAsAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:40:41.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ILevelService.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\ILevelService.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\ILevelService.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\ILevelService.cs",
-              "RelativeToolTip": "TypingTutor.Application\\IService\\ILevelService.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:42:06.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LevelController.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LevelController.cs",
-              "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\LevelController.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LevelController.cs",
-              "RelativeToolTip": "TypingTutor.API\\Controllers\\LevelController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAqwCEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:50:58.04Z",
               "EditorCaption": ""
             },
             {
@@ -270,7 +276,162 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "LevelController.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LevelController.cs",
+              "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\LevelController.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LevelController.cs",
+              "RelativeToolTip": "TypingTutor.API\\Controllers\\LevelController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwCMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:50:58.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LevelService.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\LevelService.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\LevelService.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\LevelService.cs",
+              "RelativeToolTip": "TypingTutor.Application\\Service\\LevelService.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAADwvy8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:40:41.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ILevelService.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\ILevelService.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\ILevelService.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\ILevelService.cs",
+              "RelativeToolTip": "TypingTutor.Application\\IService\\ILevelService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:42:06.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserProgress.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\UserProgress.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Domain\\UserProgress.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\UserProgress.cs",
+              "RelativeToolTip": "TypingTutor.Domain\\UserProgress.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:04:44.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IUserProgressRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
+              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IUserProgressRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBAAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:06:37.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserProgressRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\AppData\\Local\\SourceServer\\8b9abe0fb85525eb6da950e202dbf518a3709f4fb53d7f38b458e748f69b1900\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\8b9abe0fb85525eb6da950e202dbf518a3709f4fb53d7f38b458e748f69b1900\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
+              "ToolTip": "C:\\Users\\Kiki\\AppData\\Local\\SourceServer\\8b9abe0fb85525eb6da950e202dbf518a3709f4fb53d7f38b458e748f69b1900\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\8b9abe0fb85525eb6da950e202dbf518a3709f4fb53d7f38b458e748f69b1900\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs [Read Only]",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T18:50:00.483Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:25:54.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserStatisticsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserStatisticsDto.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\Dto\\UserStatisticsDto.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserStatisticsDto.cs",
+              "RelativeToolTip": "TypingTutor.Application\\Dto\\UserStatisticsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T18:20:30.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserProgressSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserProgressSummaryDto.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\Dto\\UserProgressSummaryDto.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserProgressSummaryDto.cs",
+              "RelativeToolTip": "TypingTutor.Application\\Dto\\UserProgressSummaryDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T18:12:24.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20241110173036_add-new-property.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Migrations\\20241110173036_add-new-property.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Migrations\\20241110173036_add-new-property.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Migrations\\20241110173036_add-new-property.cs",
+              "RelativeToolTip": "TypingTutor.Infrastructure\\Migrations\\20241110173036_add-new-property.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T17:30:37.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserProgressDto.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserProgressDto.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\Dto\\UserProgressDto.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserProgressDto.cs",
+              "RelativeToolTip": "TypingTutor.Application\\Dto\\UserProgressDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:24:33.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IUserRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:05:16.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\Repository.cs",
@@ -278,51 +439,11 @@
               "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\Repository.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAADwvxcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:28:27.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T19:28:27.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserProgress.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\UserProgress.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Domain\\UserProgress.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\UserProgress.cs",
-              "RelativeToolTip": "TypingTutor.Domain\\UserProgress.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAASwBIAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:04:44.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Level.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Level.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Domain\\Level.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Level.cs",
-              "RelativeToolTip": "TypingTutor.Domain\\Level.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:04:09.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserProgressRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
-              "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\UserProgressRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAkwBIAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:33:45.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 41,
               "Title": "20241109172700_first.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Migrations\\20241109172700_first.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Migrations\\20241109172700_first.cs",
@@ -330,25 +451,11 @@
               "RelativeToolTip": "TypingTutor.Infrastructure\\Migrations\\20241109172700_first.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T17:27:00.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T17:27:00.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserProgressDto.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserProgressDto.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\Dto\\UserProgressDto.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Dto\\UserProgressDto.cs",
-              "RelativeToolTip": "TypingTutor.Application\\Dto\\UserProgressDto.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAwwBAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T17:24:33.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "LessonRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\LessonRepository.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\LessonRepository.cs",
@@ -356,12 +463,11 @@
               "RelativeToolTip": "TypingTutor.Infrastructure\\Repository\\LessonRepository.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAkwBEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:31:49.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T19:31:49.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\appsettings.json",
               "RelativeDocumentMoniker": "TypingTutor.API\\appsettings.json",
@@ -369,12 +475,11 @@
               "RelativeToolTip": "TypingTutor.API\\appsettings.json",
               "ViewState": "AQIAAAEAAAAAAAAAAAAkwAgAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-30T19:13:57.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T19:13:57.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "TypingTutor.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
               "RelativeDocumentMoniker": "TypingTutor.Domain\\TypingTutor.Domain.csproj",
@@ -382,12 +487,11 @@
               "RelativeToolTip": "TypingTutor.Domain\\TypingTutor.Domain.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-05T19:21:47.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T19:21:47.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "TypingTutorDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutorDbContext.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\TypingTutorDbContext.cs",
@@ -395,12 +499,11 @@
               "RelativeToolTip": "TypingTutor.Infrastructure\\TypingTutorDbContext.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAgwCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T19:09:11.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T19:09:11.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Models\\RegisterModel.cs",
               "RelativeDocumentMoniker": "TypingTutor.API\\Models\\RegisterModel.cs",
@@ -408,12 +511,11 @@
               "RelativeToolTip": "TypingTutor.API\\Models\\RegisterModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T20:06:11.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T20:06:11.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Program.cs",
               "RelativeDocumentMoniker": "TypingTutor.API\\Program.cs",
@@ -425,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\UserController.cs",
@@ -437,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\AuthController.cs",
@@ -449,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\User.cs",
               "RelativeDocumentMoniker": "TypingTutor.Domain\\User.cs",
@@ -461,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "IUserProgressService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\IUserProgressService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\IUserProgressService.cs",
@@ -473,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "UserProgressService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\UserProgressService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\UserProgressService.cs",
@@ -485,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "TypingTutor.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj",
@@ -497,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\AuthService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\AuthService.cs",
@@ -509,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Models\\LoginModel.cs",
               "RelativeDocumentMoniker": "TypingTutor.API\\Models\\LoginModel.cs",
@@ -521,19 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "LessonController.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LessonController.cs",
-              "RelativeDocumentMoniker": "TypingTutor.API\\Controllers\\LessonController.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\Controllers\\LessonController.cs",
-              "RelativeToolTip": "TypingTutor.API\\Controllers\\LessonController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAmwAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:47:58.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\UserService.cs",
@@ -545,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\IUserService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\IUserService.cs",
@@ -557,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "ILessonService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IService\\ILessonService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\IService\\ILessonService.cs",
@@ -569,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "LessonService.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\Service\\LessonService.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\Service\\LessonService.cs",
@@ -581,19 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IRepository.cs",
-              "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\IRepository.cs",
-              "RelativeToolTip": "TypingTutor.Application\\IRepository\\IRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwA4AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T19:25:54.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "ILessonRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\IRepository\\ILessonRepository.cs",
               "RelativeDocumentMoniker": "TypingTutor.Application\\IRepository\\ILessonRepository.cs",
@@ -605,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "TypingTutor.Infrastructure\\Repository\\UserRepository.cs",
@@ -617,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "Lesson.cs",
               "DocumentMoniker": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\Lesson.cs",
               "RelativeDocumentMoniker": "TypingTutor.Domain\\Lesson.cs",

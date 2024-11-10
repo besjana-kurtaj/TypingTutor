@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrl: './level-form.component.css'
 })
 export class LevelFormComponent {
-  level: Level = { levelId: 0, name: '', difficulty: 0, timeLimitInSeconds: 60 , description:''};
+  level: Level = { levelId: 0, name: '', difficulty: 0, timeLimitInSeconds: 60 , description:'',levelNumber:0};
   isEditMode: boolean = false;
 
   constructor(

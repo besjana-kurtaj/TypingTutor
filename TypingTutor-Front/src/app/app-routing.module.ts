@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { TypingGameComponent } from './game/typing-game/typing-game.component';
 import { DashboardComponent } from './game/dashboard/dashboard.component';
 import { EndOfGameComponent } from './game/end-of-game/end-of-game.component';
+import { UserDashboardComponent } from './game/user-dashboard/user-dashboard.component';
+import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },            
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'add-level', component: LevelFormComponent },      
   { path: 'edit-level/:id', component: LevelFormComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'user/dashboard', component: UserDashboardComponent },
+  { path: 'admin/dashboard', component: AdminDashboardComponent },
   { path: 'end-of-game', component: EndOfGameComponent },
   { path: '**', redirectTo: '' }   
 ];

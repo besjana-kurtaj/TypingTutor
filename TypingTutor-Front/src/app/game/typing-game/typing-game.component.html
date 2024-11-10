@@ -1,8 +1,17 @@
 <div class="typing-game-container">
-    <h2>Loja e Shtypjes - Niveli {{ levelId }}</h2>
+    <h2>Loja e shtypjes - Niveli {{ levelNumber }}</h2>
   
     <!-- Display Metrics -->
     <div class="metrics">
+      <p>
+        Vështirësia: 
+        <span
+        style="font-weight: bold;"
+        [ngStyle]="{'color': getDifficultyColor(difficulty)}">
+        {{ getDifficultyText(difficulty) }}
+          </span>
+      </p>
+ 
       <p><strong>Shpejtësia:</strong> {{ speed }} WPM</p>
       <p><strong>Saktësia:</strong> {{ accuracy }}%</p>
       <p><strong>Gabime:</strong> {{ errors }}</p>
@@ -20,7 +29,7 @@
             'current': i === userInput.length
           }"
         >
-          {{ char }}
+          {{ char === ' ' ? '\u00A0' : char }} <!-- Preserve spaces with &nbsp; -->
         </span>
       </span>
     </div>
@@ -31,16 +40,17 @@
         type="text" 
         [(ngModel)]="userInput" 
         (input)="onType($event)" 
-        placeholder="Start typing here..." 
+        placeholder="Shkruaj ketu..." 
         [disabled]="levelCompleted"
         autofocus 
       />
     </div>
   
     <!-- Completion Message and Next Level Button -->
-    <div *ngIf="levelCompleted" class="completion-message">
-      <p>Level {{ levelId }} completed!</p>
-      <button (click)="loadNextLevel()">Next Level</button>
+    <div class="completion-message">
+      
+      <p *ngIf="levelCompleted" >Level {{ levelId }} completed!</p>
+      <button (click)="loadNextLevel()">Niveli tjetër</button>
     </div>
   </div>
   

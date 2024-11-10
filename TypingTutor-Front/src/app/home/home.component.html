@@ -1,14 +1,12 @@
 <!-- Hero Section -->
 <div class="hero-section">
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="assets/test.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <!-- GIF Background -->
+  <img src="assets/test.gif" alt="Typing Animation" class="hero-gif">
 
   <!-- Overlay Content -->
   <div class="hero-content">
-    <h1>Learn Touch Typing!</h1>
-    <button mat-raised-button color="primary" class="get-started-button">Get Started</button>
+    <h1>Mëso të shkruash shpejt!</h1>
+
+    <button mat-raised-button color="primary" [routerLink]="['/game']" class="get-started-button">Fillo tani</button>
   </div>
 </div>

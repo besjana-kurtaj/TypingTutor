@@ -15,7 +15,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'; // <-- Add this line
 import { MatGridListModule } from '@angular/material/grid-list';
-
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { TypingGameComponent } from './game/typing-game/typing-game.component';
@@ -24,6 +23,11 @@ import { DashboardComponent } from './game/dashboard/dashboard.component';
 import { EndOfGameComponent } from './game/end-of-game/end-of-game.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
+import { UserProgressListComponent } from './userProgress/user-progress-list/user-progress-list.component';
+import { UserDashboardComponent } from './game/user-dashboard/user-dashboard.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { MatSelectModule } from '@angular/material/select';
     HomeComponent,
     TypingGameComponent,
     DashboardComponent,
-    EndOfGameComponent
+    EndOfGameComponent,
+    UserProgressListComponent,
+    UserDashboardComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatSelectModule,
     MatOptionModule,
     BrowserAnimationsModule ,
-    MatGridListModule
+    MatGridListModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
   ],
   providers: [
     provideHttpClient(withFetch())

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TypingTutor.Application.IRepository;
 using TypingTutor.Application.IService;
 using TypingTutor.Domain;
 
@@ -10,10 +11,11 @@ namespace TypingTutor.API.Controllers
     public class LevelController : ControllerBase
     {
         private readonly ILevelService _levelService;
-
-        public LevelController(ILevelService levelService)
+        private readonly ILevelRepository _levelRepository;
+        public LevelController(ILevelService levelService, ILevelRepository levelRepository)
         {
             _levelService = levelService;
+            _levelRepository = levelRepository;
         }
 
         [HttpPost]
@@ -29,11 +31,18 @@ namespace TypingTutor.API.Controllers
             var level = await _levelService.GetLevelByIdAsync(id);
             return level == null ? NotFound() : Ok(level);
         }
-        [HttpGet("next/{id}")]
-        public async Task<IActionResult> GetNextLevel(int id)
+        [HttpGet("next")]
+        public async Task<IActionResult> GetNextLevel([FromQuery] int levelNumber)
         {
-            var nextLevel =  _levelService.GetNextLevelAsync(id);
-            return nextLevel == null ? NotFound("No more levels") : Ok(nextLevel);
+            try
+            {
+                var nextLevel =await _levelRepository.GetNextLevelAsync(levelNumber);
+                return nextLevel == null ? NotFound("No more levels") : Ok(nextLevel);
+            }catch (Exception ex)
+            {
+                return NotFound();
+            }
+         
         }
 
         [HttpGet]

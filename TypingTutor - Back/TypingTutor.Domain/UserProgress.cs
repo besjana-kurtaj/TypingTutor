@@ -13,6 +13,7 @@ namespace TypingTutor.Domain
         public int LevelId { get; set; }
         public double Speed { get; set; }
         public double Accuracy { get; set; }
+        public int Errors {  get; set; }
         public DateTime CompletionDate { get; set; } = DateTime.UtcNow;
 
         public User User { get; set; }
