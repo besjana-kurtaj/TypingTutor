@@ -1,0 +1,22 @@
+<div class="keyboard">
+    <div *ngFor="let row of keyboardLayout">
+      <div
+        *ngFor="let key of row"
+        class="key"
+        [ngClass]="{
+          'highlighted': key === highlightedKey,
+          'space-key': key === 'Space',
+          'shift-key': key === 'Shift',
+          'enter-key': key === 'Enter',
+          'backspace-key': key === 'Backspace',
+          'tab-key': key === 'Tab',
+          'caps-key': key === 'Caps',
+          'control-key': key === 'Ctrl',
+          'alt-key': key === 'Alt'
+        }"
+      >
+        {{ key === 'Space' ? ' ' : key }}
+      </div>
+    </div>
+  </div>
+  

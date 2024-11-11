@@ -28,6 +28,7 @@ import { UserDashboardComponent } from './game/user-dashboard/user-dashboard.com
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.component';
+import { KeyboardComponent } from './game/keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.
     EndOfGameComponent,
     UserProgressListComponent,
     UserDashboardComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule,
