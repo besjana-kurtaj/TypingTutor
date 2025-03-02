@@ -4696,19 +4696,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kiki\\.nuget\\packages\\": {}
+    "C:\\Users\\besja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\TypingTutor.API.csproj",
+      "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\TypingTutor.API.csproj",
       "projectName": "TypingTutor.API",
-      "projectPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\TypingTutor.API.csproj",
-      "packagesPath": "C:\\Users\\Kiki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\obj\\",
+      "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\TypingTutor.API.csproj",
+      "packagesPath": "C:\\Users\\besja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\besja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4716,17 +4716,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj": {
-              "projectPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj"
+            "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj": {
+              "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Application\\TypingTutor.Application.csproj"
             },
-            "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj"
+            "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Infrastructure\\TypingTutor.Infrastructure.csproj"
             }
           }
         }
@@ -4796,7 +4797,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

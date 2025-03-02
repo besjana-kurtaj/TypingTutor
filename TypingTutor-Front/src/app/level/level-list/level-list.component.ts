@@ -28,4 +28,14 @@ export class LevelListComponent {
       this.loadLevels();
     });
   }
+  difficultyLabels: { [key: number]: string } = {
+    1: 'E ulët',
+    2: 'Mesatare',
+    3: 'E lartë'
+  };
+  
+  getDifficultyLabel(difficulty: number): string {
+    return this.difficultyLabels[difficulty] || ''; 
+  }
+  
 }

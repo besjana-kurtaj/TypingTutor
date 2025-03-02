@@ -7,22 +7,27 @@ import { TypingGameService } from '../../../service/typing-game.service';
   styleUrl: './user-dashboard.component.css'
 })
 export class UserDashboardComponent {
-  userId = 'cb55ad00-177b-484e-86fc-56b4cb9f86b1'; // Replace this with actual user ID
+ userId:string; 
   userProgress: any;
   performanceHistory: any[] = [];
   performanceData: any[] = [];
   displayedColumns: string[] = ['date', 'speed', 'accuracy', 'errors'];
-  constructor(private userProgressService: TypingGameService) {}
+  constructor(private userProgressService: TypingGameService) {
+
+    this.userId = localStorage.getItem('userId')!;
+  }
 
   ngOnInit(): void {
     this.loadCurrentProgress();
     this.loadPerformanceHistory();
   }
-
+  reloadPage() {
+    window.location.reload();
+  }
   loadCurrentProgress() {
     this.userProgressService.getCurrentProgress(this.userId).subscribe(
-      (data) => {this.userProgress = data;
-        console.log(this.userProgress)
+      (data) => {
+        this.userProgress = data;
       },
       (error) => console.error('Failed to load current progress', error)
     );
@@ -30,8 +35,8 @@ export class UserDashboardComponent {
 
   loadPerformanceHistory() {
     this.userProgressService.getPerformanceHistory(this.userId).subscribe(
-      (data) => {this.performanceData = data 
-        console.log(this.performanceHistory)
+      (data) => {
+        this.performanceData = data 
       },
       (error) => console.error('Failed to load performance history', error)
     );

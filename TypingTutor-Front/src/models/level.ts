@@ -3,6 +3,6 @@ export interface Level {
     name: string;
     difficulty: number;
     timeLimitInSeconds: number;
-    description?: string;
-    levelNumber?:number;
+    description: string;
+    levelNumber:number;
   }

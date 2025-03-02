@@ -9,18 +9,23 @@ import { DashboardComponent } from './game/dashboard/dashboard.component';
 import { EndOfGameComponent } from './game/end-of-game/end-of-game.component';
 import { UserDashboardComponent } from './game/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { AuthGuard } from '../service/authGuard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },            
-  { path: 'game', component: TypingGameComponent },          
-  { path: 'game/:id', component: TypingGameComponent },     
-  { path: 'levels', component: LevelListComponent },          
-  { path: 'add-level', component: LevelFormComponent },      
-  { path: 'edit-level/:id', component: LevelFormComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'user/dashboard', component: UserDashboardComponent },
-  { path: 'admin/dashboard', component: AdminDashboardComponent },
-  { path: 'end-of-game', component: EndOfGameComponent },
+  { path: 'game', component: TypingGameComponent,canActivate: [AuthGuard] },          
+  { path: 'game/:id', component: TypingGameComponent ,canActivate: [AuthGuard]},     
+  { path: 'levels', component: LevelListComponent,canActivate: [AuthGuard] },          
+  { path: 'add-level', component: LevelFormComponent,canActivate: [AuthGuard] },      
+  { path: 'edit-level/:id', component: LevelFormComponent,canActivate: [AuthGuard] },
+  { path: 'dashboard', component: DashboardComponent,canActivate: [AuthGuard] },
+  { path: 'user/dashboard', component: UserDashboardComponent,canActivate: [AuthGuard] },
+  { path: 'admin/dashboard', component: AdminDashboardComponent,canActivate: [AuthGuard] },
+  { path: 'end-of-game', component: EndOfGameComponent ,canActivate: [AuthGuard]},
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '' }   
 ];
 

@@ -29,6 +29,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.component';
 import { KeyboardComponent } from './game/keyboard/keyboard.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { KeyboardComponent } from './game/keyboard/keyboard.component';
     UserProgressListComponent,
     UserDashboardComponent,
     AdminDashboardComponent,
-    KeyboardComponent
+    KeyboardComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

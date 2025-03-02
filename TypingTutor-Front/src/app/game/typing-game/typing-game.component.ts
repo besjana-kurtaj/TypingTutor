@@ -10,7 +10,8 @@ import { LevelService } from '../../../service/level.service';
   styleUrl: './typing-game.component.css'
 })
 export class TypingGameComponent {
-  levelId: number = 5; // Start at level 1
+  currentKey: string = '';
+  levelId: number =7; // Start at level 1
   textToType: string = '';
   userInput: string = '';
   speed: number = 0;
@@ -23,13 +24,21 @@ export class TypingGameComponent {
   countdownSubscription: Subscription | null = null;
   levelCompleted: boolean = false;
   levelNumber:number=0;
-  userId: string = "cb55ad00-177b-484e-86fc-56b4cb9f86b1"; // Static user ID for testing
+  userId: string; 
+  leftHandClass: string = 'l1'; // Initial hand position class for left hand
+  leftThumbClass: string = 'm1'; // Initial thumb class for left thumb
+  rightHandClass: string = 'r1'; // Initial hand position class for right hand
+  rightThumbClass: string = 'r1'; // Initial thumb class for right thumb
+  correctSound = new Audio('assets/correct.mp3');
+  incorrectSound = new Audio('assets/incorrect.mp3');
+  constructor(private typingGameService: TypingGameService, private router: Router, private levelService: LevelService,private route: ActivatedRoute) {
 
-  constructor(private typingGameService: TypingGameService, private router: Router, private levelService: LevelService,private route: ActivatedRoute) {}
+    this.userId = localStorage.getItem('userId')!;
+  }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
-      this.levelId = params['levelId'] ? params['levelId'] : 5;
+      this.levelId = params['levelId'] ? params['levelId'] : 7;
       this.loadLevelData(this.levelId);
     });
    
@@ -58,6 +67,73 @@ export class TypingGameComponent {
       this.router.navigate(['/end-of-game']); 
     });
   }
+  updateHandPosition(letter: string): void {
+    let handImagePath = '';
+
+    // Define which hand image should be shown
+    switch (letter.toLowerCase()) {
+        case 'a':
+            handImagePath = 'hints/leftHand_pinky.png';
+            break;
+        case 's':
+            handImagePath = 'hints/leftHand_ring.png';
+            break;
+        case 'd':
+            handImagePath = 'hints/leftHand_middle.png';
+            break;
+        case 'f':
+            handImagePath = 'hints/leftHand_index.png';
+            break;
+        case 'j':
+            handImagePath = 'hints/rightHand_index.png';
+            break;
+        case 'k':
+            handImagePath = 'hints/rightHand_middle.png';
+            break;
+        case 'l':
+            handImagePath = 'hints/rightHand_ring.png';
+            break;
+        case ';':
+            handImagePath = 'hints/rightHand_pinky.png';
+            break;
+        default:
+            handImagePath = 'hints/defaultHands.png'; // Default hand position
+            break;
+    }
+
+    // Update the hand image dynamically
+    const handImageElement = document.getElementById('handImage') as HTMLImageElement;
+    if (handImageElement) {
+        handImageElement.src = handImagePath;
+    }
+}
+
+
+
+
+resetFingers(): void {
+    const fingers = [
+        'leftPinky', 'leftRing', 'leftMiddle', 'leftIndex',
+        'rightIndex', 'rightMiddle', 'rightRing', 'rightPinky',
+        'leftThumb', 'rightThumb'
+    ];
+    
+    fingers.forEach(finger => {
+        const fingerElement = document.getElementById(finger);
+        if (fingerElement) {
+            fingerElement.classList.remove('highlight', 'highlight-red'); // Remove both highlights
+        }
+    });
+}
+
+  
+  highlightFinger(fingerId: string): void {
+    const fingerElement = document.getElementById(fingerId);
+    if (fingerElement) {
+      fingerElement.classList.add('highlight-red'); // Add red highlight
+    }
+  }
+
 
   startGame(): void {
     this.userInput = '';
@@ -79,20 +155,75 @@ export class TypingGameComponent {
       }
     });
   }
+  // updateHandPosition(letter: string) {
+  //   // Example logic: Update hand/finger position based on the key
+  //   switch (letter) {
+  //     case 'a':
+  //       this.leftHandClass = 'l2'; // Left hand finger 2
+  //       this.leftThumbClass = 'm1'; // Left thumb
+  //       break;
+  //     case 'b':
+  //       this.leftHandClass = 'l1'; // Left hand
+  //       this.leftThumbClass = 'm2'; // Left thumb
+  //       break;
+  //     case 'z':
+  //       this.leftHandClass = 'l3'; // Left hand finger 3
+  //       this.leftThumbClass = 'm1'; // Left thumb
+  //       break;
+  //     case 'y':
+  //       this.rightHandClass = 'r2'; // Right hand finger 2
+  //       this.rightThumbClass = 'm1'; // Right thumb
+  //       break;
+  //     // Add cases for other letters and finger positions
+  //     default:
+  //       this.leftHandClass = 'l1'; // Default position for left hand
+  //       this.rightHandClass = 'r1'; // Default position for right hand
+  //   }
+  // }
+  // onType(event: Event): void {
+  //   const currentLength = this.userInput.length;
+  //   const currentLetter = this.userInput[this.userInput.length - 1];  // Get the last typed letter
+  //   this.currentKey = currentLetter;  // Update the current key to be typed
 
+  //   // Logic to update the hand position based on the current key
+  //   this.updateHandPosition(currentLetter);
+
+  //   // Kontrollo nëse përdoruesi ka përfunduar tekstin
+  //   if (this.userInput === this.textToType) {
+  //     this.completeLevel();
+  //     return;
+  //   }
+
+  //   // Kontrollo shtypjen e saktë apo gabim dhe riprodho tingullin përkatës
+  //   if (this.userInput[currentLength - 1] === this.textToType[currentLength - 1]) {
+  //     this.correctSound.play();
+  //   } else {
+  //     this.incorrectSound.play();
+  //     this.errors++;
+  //   }
+  // }
   onType(event: Event): void {
     const currentLength = this.userInput.length;
-
+    const nextLetter = this.textToType[currentLength]; // Get the next letter to type
+  
+    // Update hand position based on the next letter
+    if (nextLetter) {
+      this.updateHandPosition(nextLetter);
+  }
+    // Check if the user has completed the text
     if (this.userInput === this.textToType) {
       this.completeLevel();
       return;
     }
-
-    if (this.userInput[currentLength - 1] !== this.textToType[currentLength - 1]) {
+  
+    // Check for correct or incorrect typing
+    if (this.userInput[currentLength - 1] === this.textToType[currentLength - 1]) {
+      this.correctSound.play();
+    } else {
+      this.incorrectSound.play();
       this.errors++;
     }
   }
-
   updateMetrics(startTime: number): void {
     const elapsedMinutes = (new Date().getTime() - startTime) / 60000;
     this.speed = Math.round((this.userInput.length / 5) / elapsedMinutes);
@@ -132,7 +263,14 @@ export class TypingGameComponent {
 
   loadNextLevel(): void {
     this.completeLevel();
-  
+    this.userInput = '';  // Reset the user's input
+      this.currentKey = '';  // Reset the current key
+      // Reset hand positions for next level
+      this.leftHandClass = 'l1';
+      this.leftThumbClass = 'm1';
+      this.rightHandClass = 'r1';
+      this.rightThumbClass = 'r1';
+    
   }
   getDifficultyColor(difficulty: number): string {
     switch (difficulty) {

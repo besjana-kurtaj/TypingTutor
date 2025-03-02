@@ -11,7 +11,8 @@ export class AdminDashboardComponent {
   userStatistics: any | null = null;
   displayedColumns: string[] = ['userName', 'levelId', 'speed', 'accuracy', 'errors', 'completionDate'];
 
-  constructor(private adminDashboardService: TypingGameService) {}
+  constructor(private adminDashboardService: TypingGameService) {  
+  }
 
   ngOnInit(): void {
     this.loadUserProgressHistory();

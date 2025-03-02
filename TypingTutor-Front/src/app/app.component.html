@@ -1,16 +1,45 @@
-
 <header class="header">
   <div class="logo">
-    <a routerLink="/" class="logo-link">TypingTutor</a>
+    <a routerLink="/" class="logo-link">Tutor i shtypjes</a>
   </div>
   <nav class="nav">
-    <a routerLink="/admin/dashboard" class="nav-item">Dashboardi i admini</a>
-    <a routerLink="/user/dashboard" class="nav-item">Dashboardi i userit</a>
-    <a routerLink="/levels" class="nav-item">Nivelet</a>
-    <a routerLink="/game" class="nav-item">Fillo lojen</a>
-    <!-- <button mat-button class="login-button" routerLink="/login">Login</button> -->
+    <!-- Conditionally show the admin or user dashboard based on role -->
+    <a 
+      *ngIf="isAdmin" 
+      routerLink="/admin/dashboard" 
+      class="nav-item"
+    >Dashboardi</a>
+    <a 
+      *ngIf="isUser" 
+      routerLink="/user/dashboard" 
+      class="nav-item"
+    >Dashboardi</a>
+
+    <!-- Always show these links -->
+    <a routerLink="/levels" *ngIf="isAdmin" class="nav-item">Nivelet</a>
+    <a routerLink="/game"  *ngIf="isUser"  class="nav-item">Fillo lojën</a>
+
+    <!-- Show Login/Register when not authenticated -->
+    <!-- <a 
+      *ngIf="!isAuthenticated" 
+      routerLink="/login" 
+      class="nav-item"
+    >Hyr</a> -->
+    <a 
+      *ngIf="!isAuthenticated" 
+      routerLink="/register" 
+      class="nav-item"
+    >Regjistrohu</a>
+
+    <!-- Show Logout when authenticated -->
+    <a 
+      *ngIf="isAuthenticated" 
+      (click)="logout()" 
+      class="nav-item"
+    >Dil</a>
   </nav>
 </header>
+
 
 
 <router-outlet />

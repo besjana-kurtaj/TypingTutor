@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {}
+    "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
+    "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
         "projectName": "TypingTutor.Domain",
-        "projectPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
-        "packagesPath": "C:\\Users\\Kiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kiki\\Desktop\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\obj\\",
+        "projectPath": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\TypingTutor.Domain.csproj",
+        "packagesPath": "C:\\Users\\besja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\besja\\OneDrive\\Desktop\\Tema\\TypingTutor\\TypingTutor - Back\\TypingTutor.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\besja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

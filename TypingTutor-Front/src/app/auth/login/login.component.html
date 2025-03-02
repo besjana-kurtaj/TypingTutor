@@ -1,0 +1,22 @@
+<div class="login-container">
+    <mat-card class="login-card">
+      <mat-card-title>Kyçu</mat-card-title>
+      <mat-card-content>
+        <form (ngSubmit)="onLogin()">
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="email" name="email" type="email" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Fjalëkalimi</mat-label>
+            <input matInput [(ngModel)]="password" name="password" type="password" required />
+          </mat-form-field>
+          <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+          <button mat-raised-button color="primary" type="submit">Kyçu</button>
+        </form>
+        <p>Nuk keni një llogari? <a routerLink="/register">Regjistrohuni këtu</a></p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

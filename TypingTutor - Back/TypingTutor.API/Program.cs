@@ -27,13 +27,10 @@ builder.Services.AddDbContext<TypingTutorDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TypingTutor")));
 
 // Configure Identity for user management with custom options
-builder.Services.AddIdentity<User, IdentityRole>(options =>
-{
-    options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    options.User.RequireUniqueEmail = true;
-})
-.AddEntityFrameworkStores<TypingTutorDbContext>()
-.AddDefaultTokenProviders();
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<TypingTutorDbContext>()
+    .AddDefaultTokenProviders();
+
 
 // Configure JWT Authentication
 var jwtSettings = configuration.GetSection("JwtSettings");
@@ -53,7 +50,7 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         ValidIssuer = jwtSettings["Issuer"],
         ValidAudience = jwtSettings["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("c8ec220c-be7d-4e47-97c7-098bf6a57ce1"))
     };
 });
 

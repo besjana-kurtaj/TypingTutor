@@ -21,25 +21,7 @@ namespace TypingTutor.Infrastructure.Repository
                                  .Where(up => up.UserId == userId)
                                  .ToListAsync();
         }
-        public async Task<UserProgressSummaryDto> GetCurrentProgressAsync(string userId)
-        {
-            var userProgressData = _context.UserProgresses
-                .Where(up => up.UserId == userId);
-
-            // Calculate average and max values
-            var summary = await userProgressData
-                .GroupBy(up => up.UserId)
-                .Select(g => new UserProgressSummaryDto
-                {
-                    AverageSpeed = g.Average(up => up.Speed),
-                    AverageAccuracy = g.Average(up => up.Accuracy),
-                    AverageErrors = g.Average(up => up.Errors),
-                    MaxLevel = g.Max(up => up.LevelId)
-                })
-                .FirstOrDefaultAsync();
-
-            return summary;
-        }
+       
         public async Task<List<UserProgressDto>> GetAllUsersPerformanceHistoryAsync()
         {
             return await _context.UserProgresses
@@ -74,7 +56,24 @@ namespace TypingTutor.Infrastructure.Repository
 
             return statistics;
         }
+        public async Task<UserProgressSummaryDto> GetCurrentProgressAsync(string userId)
+        {
+            var userProgressData = _context.UserProgresses
+                .Where(up => up.UserId == userId);
 
+            var summary = await userProgressData
+                .GroupBy(up => up.UserId)
+                .Select(g => new UserProgressSummaryDto
+                {
+                    AverageSpeed = g.Average(up => up.Speed),
+                    AverageAccuracy = g.Average(up => up.Accuracy),
+                    AverageErrors = g.Average(up => up.Errors),
+                    MaxLevel = g.Max(up => up.LevelId)
+                })
+                .FirstOrDefaultAsync();
+
+            return summary;
+        }
 
         public async Task<List<UserProgress>> GetPerformanceHistoryAsync(string userId)
         {

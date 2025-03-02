@@ -17,6 +17,12 @@ namespace TypingTutor.API.Controllers
             _levelService = levelService;
             _levelRepository = levelRepository;
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAllLevels()
+        {
+            var levels = await _levelService.GetAllLevelsAsync();
+            return Ok(levels);
+        }
 
         [HttpPost]
         public async Task<IActionResult> CreateLevel([FromBody] Level level)
@@ -45,12 +51,7 @@ namespace TypingTutor.API.Controllers
          
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllLevels()
-        {
-            var levels = await _levelService.GetAllLevelsAsync();
-            return Ok(levels);
-        }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateLevel(int id, [FromBody] Level level)

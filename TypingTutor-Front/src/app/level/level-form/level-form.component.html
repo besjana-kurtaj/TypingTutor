@@ -1,5 +1,5 @@
 <mat-card class="form-card">
-  <mat-card-title class="form-title">Shto nivel</mat-card-title>
+  <mat-card-title class="form-title">{{ isEditMode ? 'Ndrysho nivelin' : 'Shto nivel' }}</mat-card-title>
   <mat-card-content>
     <form (ngSubmit)="saveLevel()" class="level-form">
       <div class="flex-container">
@@ -33,11 +33,11 @@
 
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Përshkrimi</mat-label>
-        <textarea matInput placeholder="Shto një përshkrim për nivelin" [(ngModel)]="level.description" name="description"></textarea>
+        <textarea matInput placeholder="Shto një përshkrim për nivelin" [(ngModel)]="level.description" required name="description"></textarea>
       </mat-form-field>
-
+      <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
       <div class="button-group">
-        <button mat-raised-button color="primary" type="submit">Shto nivel</button>
+        <button mat-raised-button color="primary" type="submit">{{ isEditMode ? 'Përditëso nivelin' : 'Shto nivel' }}</button>
         <button mat-button color="warn" type="button" (click)="cancel()">Anulo</button>
       </div>
     </form>
