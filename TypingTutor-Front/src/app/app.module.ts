@@ -17,7 +17,7 @@ import { MatInputModule } from '@angular/material/input'; // <-- Add this line
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
-import { TypingGameComponent } from './game/typing-game/typing-game.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './game/dashboard/dashboard.component';
 import { EndOfGameComponent } from './game/end-of-game/end-of-game.component';
@@ -31,6 +31,7 @@ import { AdminDashboardComponent } from './game/admin-dashboard/admin-dashboard.
 import { KeyboardComponent } from './game/keyboard/keyboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { TypingGameComponent } from './game/typing-game/typing-game.component';
 
 @NgModule({
   declarations: [

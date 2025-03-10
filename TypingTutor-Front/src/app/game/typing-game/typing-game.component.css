@@ -459,10 +459,7 @@ li#key_LFSH, li#key_RTSH {
   background-repeat: no-repeat;
 }
 
-#leftHand { left: 0px; background-image: url('hints/leftHand.png'); }
-#leftThumb { left: 52px; background-image: url('hints/leftThumb.png'); }
-#rightThumb { left: 75px; background-image: url('hints/rightThumb.png'); }
-#rightHand { left: 97px; background-image: url('hints/rightHand.png'); }
+
 .highlight {
   background-color: yellow; /* Normal highlight */
   border-radius: 50%;

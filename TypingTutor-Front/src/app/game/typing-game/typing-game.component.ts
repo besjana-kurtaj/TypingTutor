@@ -68,43 +68,105 @@ export class TypingGameComponent {
     });
   }
   updateHandPosition(letter: string): void {
-    let handImagePath = '';
+    let imagePath = '';
 
-    // Define which hand image should be shown
     switch (letter.toLowerCase()) {
-        case 'a':
-            handImagePath = 'hints/leftHand_pinky.png';
+        // Left Hand Fingers
+        case 'q': case 'a': case 'z':
+            imagePath = 'assets/hints/left_pinky.jpg';
             break;
-        case 's':
-            handImagePath = 'hints/leftHand_ring.png';
+        case 'w': case 's': case 'x':
+            imagePath = 'assets/hints/left_ring.jpg';
             break;
-        case 'd':
-            handImagePath = 'hints/leftHand_middle.png';
+        case 'e': case 'd': case 'c':
+            imagePath = 'assets/hints/left_middle.jpg';
             break;
-        case 'f':
-            handImagePath = 'hints/leftHand_index.png';
+        case 'r': case 'f': case 'v': case 't': case 'g': case 'b':
+            imagePath = 'assets/hints/left_index.jpg';
             break;
-        case 'j':
-            handImagePath = 'hints/rightHand_index.png';
+
+        // Right Hand Fingers
+        case 'y': case 'h': case 'n': case 'u': case 'j': case 'm':
+            imagePath = 'assets/hints/right_index.jpg';
             break;
-        case 'k':
-            handImagePath = 'hints/rightHand_middle.png';
+        case 'i': case 'k':
+            imagePath = 'assets/hints/right_middle.jpg';
             break;
-        case 'l':
-            handImagePath = 'hints/rightHand_ring.png';
+        case 'o': case 'l':
+            imagePath = 'assets/hints/right_ring.jpg';
             break;
-        case ';':
-            handImagePath = 'hints/rightHand_pinky.png';
+        case 'p': case ';':
+            imagePath = 'assets/hints/right_pinky.jpg';
             break;
+
+        // Numbers & Special Characters
+        case '1': case '!':
+            imagePath = 'assets/hints/left_pinky.jpg';
+            break;
+        case '2': case '@':
+            imagePath = 'assets/hints/left_ring.jpg';
+            break;
+        case '3': case '#':
+            imagePath = 'assets/hints/left_middle.jpg';
+            break;
+        case '4': case '$':
+        case '5': case '%':
+            imagePath = 'assets/hints/left_index.jpg';
+            break;
+        case '6': case '^':
+        case '7': case '&':
+            imagePath = 'assets/hints/right_index.jpg';
+            break;
+        case '8': case '*':
+            imagePath = 'assets/hints/right_middle.jpg';
+            break;
+        case '9': case '(':
+        case '0': case ')':
+            imagePath = 'assets/hints/right_ring.jpg';
+            break;
+        case '-': case '_':
+        case '=': case '+':
+            imagePath = 'assets/hints/right_pinky.jpg';
+            break;
+
+        // Symbols
+        case '[': case '{':
+        case ']': case '}':
+            imagePath = 'assets/hints/right_pinky.jpg';
+            break;
+        case '\\': case '|':
+            imagePath = 'assets/hints/right_pinky.jpg';
+            break;
+        case ';': case ':':
+        case "'": case '"':
+            imagePath = 'assets/hints/right_pinky.jpg';
+            break;
+        case ',': case '<':
+        case '.': case '>':
+        case '/': case '?':
+            imagePath = 'assets/hints/right_ring.jpg';
+            break;
+
+        // Spacebar (Thumbs)
+        case ' ':
+            imagePath = 'assets/hints/thumbs.jpg';
+            break;
+
+        // Enter Key (Right Pinky)
+        case 'enter':
+            imagePath = 'assets/hints/right_pinky.jpg';
+            break;
+
+        // Default (No Key Pressed)
         default:
-            handImagePath = 'hints/defaultHands.png'; // Default hand position
+            imagePath = 'assets/hints/default.jpg';
             break;
     }
 
     // Update the hand image dynamically
     const handImageElement = document.getElementById('handImage') as HTMLImageElement;
     if (handImageElement) {
-        handImageElement.src = handImagePath;
+        handImageElement.src = imagePath;
     }
 }
 
@@ -209,7 +271,8 @@ resetFingers(): void {
     // Update hand position based on the next letter
     if (nextLetter) {
       this.updateHandPosition(nextLetter);
-  }
+    }
+  
     // Check if the user has completed the text
     if (this.userInput === this.textToType) {
       this.completeLevel();
@@ -223,7 +286,7 @@ resetFingers(): void {
       this.incorrectSound.play();
       this.errors++;
     }
-  }
+}
   updateMetrics(startTime: number): void {
     const elapsedMinutes = (new Date().getTime() - startTime) / 60000;
     this.speed = Math.round((this.userInput.length / 5) / elapsedMinutes);
