@@ -1,4 +1,5 @@
 Aplikacioni për Trajnimin e Shtypjes me Dhjetë Gishta
+
 Ky është një ueb aplikacion edukativ i ndërtuar për të ndihmuar përdoruesit të përmirësojnë aftësitë e tyre në shtypje me tastierë duke përdorur të dhjetë gishtat. Aplikacioni është krijuar si pjesë e punimit të diplomës për nivelin Bachelor në Inxhinieri Kompjuterike.
 
 🧠 Qëllimi
