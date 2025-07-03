@@ -11,7 +11,7 @@ import { LevelService } from '../../../service/level.service';
 })
 export class TypingGameComponent {
   currentKey: string = '';
-  levelId: number =7; // Start at level 1
+  levelId: number =1; // Start at level 1
   textToType: string = '';
   userInput: string = '';
   speed: number = 0;
@@ -38,7 +38,7 @@ export class TypingGameComponent {
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
-      this.levelId = params['levelId'] ? params['levelId'] : 7;
+      this.levelId = params['levelId'] ? params['levelId'] : 1;
       this.loadLevelData(this.levelId);
     });
    
@@ -67,11 +67,17 @@ export class TypingGameComponent {
       this.router.navigate(['/end-of-game']); 
     });
   }
-  updateHandPosition(letter: string): void {
-    let imagePath = '';
-
+  updateHandPosition(letter: string | undefined): void {
+    let imagePath = 'assets/hints/default.jpg';
+    if (!letter) {
+   
+        const handImageElement = document.getElementById('handImage') as HTMLImageElement;
+        if (handImageElement) {
+            handImageElement.src = imagePath;
+        }
+        return;
+    }
     switch (letter.toLowerCase()) {
-        // Left Hand Fingers
         case 'q': case 'a': case 'z':
             imagePath = 'assets/hints/left_pinky.jpg';
             break;
@@ -84,8 +90,6 @@ export class TypingGameComponent {
         case 'r': case 'f': case 'v': case 't': case 'g': case 'b':
             imagePath = 'assets/hints/left_index.jpg';
             break;
-
-        // Right Hand Fingers
         case 'y': case 'h': case 'n': case 'u': case 'j': case 'm':
             imagePath = 'assets/hints/right_index.jpg';
             break;
@@ -96,79 +100,38 @@ export class TypingGameComponent {
             imagePath = 'assets/hints/right_ring.jpg';
             break;
         case 'p': case ';':
+        case 'ë': case 'Ë':
             imagePath = 'assets/hints/right_pinky.jpg';
             break;
 
-        // Numbers & Special Characters
-        case '1': case '!':
-            imagePath = 'assets/hints/left_pinky.jpg';
-            break;
-        case '2': case '@':
-            imagePath = 'assets/hints/left_ring.jpg';
-            break;
-        case '3': case '#':
-            imagePath = 'assets/hints/left_middle.jpg';
-            break;
-        case '4': case '$':
-        case '5': case '%':
-            imagePath = 'assets/hints/left_index.jpg';
-            break;
-        case '6': case '^':
-        case '7': case '&':
-            imagePath = 'assets/hints/right_index.jpg';
-            break;
-        case '8': case '*':
-            imagePath = 'assets/hints/right_middle.jpg';
-            break;
-        case '9': case '(':
-        case '0': case ')':
-            imagePath = 'assets/hints/right_ring.jpg';
-            break;
-        case '-': case '_':
-        case '=': case '+':
-            imagePath = 'assets/hints/right_pinky.jpg';
-            break;
+     
+        case '1': case '!': imagePath = 'assets/hints/left_pinky.jpg'; break;
+        case '2': case '@': imagePath = 'assets/hints/left_ring.jpg'; break;
+        case '3': case '#': imagePath = 'assets/hints/left_middle.jpg'; break;
+        case '4': case '$': case '5': case '%': imagePath = 'assets/hints/left_index.jpg'; break;
+        case '6': case '^': case '7': case '&': imagePath = 'assets/hints/right_index.jpg'; break;
+        case '8': case '*': imagePath = 'assets/hints/right_middle.jpg'; break;
+        case '9': case '(': case '0': case ')': imagePath = 'assets/hints/right_ring.jpg'; break;
+        case '-': case '_': case '=': case '+': imagePath = 'assets/hints/right_pinky.jpg'; break;
 
-        // Symbols
-        case '[': case '{':
-        case ']': case '}':
-            imagePath = 'assets/hints/right_pinky.jpg';
-            break;
-        case '\\': case '|':
-            imagePath = 'assets/hints/right_pinky.jpg';
-            break;
-        case ';': case ':':
-        case "'": case '"':
-            imagePath = 'assets/hints/right_pinky.jpg';
-            break;
-        case ',': case '<':
-        case '.': case '>':
-        case '/': case '?':
-            imagePath = 'assets/hints/right_ring.jpg';
-            break;
-
-        // Spacebar (Thumbs)
+      
+        case '[': case '{': case ']': case '}': imagePath = 'assets/hints/right_pinky.jpg'; break;
+        case '\\': case '|': imagePath = 'assets/hints/right_pinky.jpg'; break;
+        case ';': case ':': case "'": case '"': imagePath = 'assets/hints/right_pinky.jpg'; break;
+        case ',': case '<': case '.': case '>': case '/': case '?': imagePath = 'assets/hints/right_ring.jpg'; break;
         case ' ':
             imagePath = 'assets/hints/thumbs.jpg';
             break;
-
-        // Enter Key (Right Pinky)
         case 'enter':
             imagePath = 'assets/hints/right_pinky.jpg';
             break;
-
-        // Default (No Key Pressed)
-        default:
-            imagePath = 'assets/hints/default.jpg';
-            break;
-    }
-
-    // Update the hand image dynamically
+    } 
     const handImageElement = document.getElementById('handImage') as HTMLImageElement;
     if (handImageElement) {
         handImageElement.src = imagePath;
     }
 }
+
 
 
 
@@ -204,6 +167,8 @@ resetFingers(): void {
     this.timer = this.timeLimitInSeconds;
     this.startTimer();
 
+    this.updateHandPosition(this.textToType[0]);
+
     const startTime = new Date().getTime();
     interval(1000).subscribe(() => this.updateMetrics(startTime));
   }
@@ -217,89 +182,46 @@ resetFingers(): void {
       }
     });
   }
-  // updateHandPosition(letter: string) {
-  //   // Example logic: Update hand/finger position based on the key
-  //   switch (letter) {
-  //     case 'a':
-  //       this.leftHandClass = 'l2'; // Left hand finger 2
-  //       this.leftThumbClass = 'm1'; // Left thumb
-  //       break;
-  //     case 'b':
-  //       this.leftHandClass = 'l1'; // Left hand
-  //       this.leftThumbClass = 'm2'; // Left thumb
-  //       break;
-  //     case 'z':
-  //       this.leftHandClass = 'l3'; // Left hand finger 3
-  //       this.leftThumbClass = 'm1'; // Left thumb
-  //       break;
-  //     case 'y':
-  //       this.rightHandClass = 'r2'; // Right hand finger 2
-  //       this.rightThumbClass = 'm1'; // Right thumb
-  //       break;
-  //     // Add cases for other letters and finger positions
-  //     default:
-  //       this.leftHandClass = 'l1'; // Default position for left hand
-  //       this.rightHandClass = 'r1'; // Default position for right hand
-  //   }
-  // }
-  // onType(event: Event): void {
-  //   const currentLength = this.userInput.length;
-  //   const currentLetter = this.userInput[this.userInput.length - 1];  // Get the last typed letter
-  //   this.currentKey = currentLetter;  // Update the current key to be typed
 
-  //   // Logic to update the hand position based on the current key
-  //   this.updateHandPosition(currentLetter);
-
-  //   // Kontrollo nëse përdoruesi ka përfunduar tekstin
-  //   if (this.userInput === this.textToType) {
-  //     this.completeLevel();
-  //     return;
-  //   }
-
-  //   // Kontrollo shtypjen e saktë apo gabim dhe riprodho tingullin përkatës
-  //   if (this.userInput[currentLength - 1] === this.textToType[currentLength - 1]) {
-  //     this.correctSound.play();
-  //   } else {
-  //     this.incorrectSound.play();
-  //     this.errors++;
-  //   }
-  // }
   onType(event: Event): void {
     const currentLength = this.userInput.length;
-    const nextLetter = this.textToType[currentLength]; // Get the next letter to type
-  
-    // Update hand position based on the next letter
+    const nextLetter = this.textToType[currentLength];  
+    
     if (nextLetter) {
       this.updateHandPosition(nextLetter);
-    }
-  
-    // Check if the user has completed the text
+    } 
+
     if (this.userInput === this.textToType) {
       this.completeLevel();
       return;
-    }
-  
-    // Check for correct or incorrect typing
+    } 
     if (this.userInput[currentLength - 1] === this.textToType[currentLength - 1]) {
       this.correctSound.play();
     } else {
       this.incorrectSound.play();
       this.errors++;
     }
-}
+  }
   updateMetrics(startTime: number): void {
-    const elapsedMinutes = (new Date().getTime() - startTime) / 60000;
-    this.speed = Math.round((this.userInput.length / 5) / elapsedMinutes);
-    this.accuracy = Math.round(((this.userInput.length - this.errors) / this.userInput.length) * 100);
-    this.score = this.speed * this.accuracy;
+    const minutes = (this.timeLimitInSeconds - this.timer) / 60;
+    if (minutes > 0 && this.userInput.length > 0) {
+      this.speed = Math.round(this.userInput.length / 5 / minutes);
+    } else {
+      this.speed = 0;
+    }
+    if (this.userInput.length + this.errors > 0) {
+      this.accuracy = Math.round((this.userInput.length / (this.userInput.length + this.errors)) * 100);
+    } else {
+      this.accuracy = 100;
+    }
+    this.score = this.userInput.length > 0 ? this.userInput.length - this.errors : 0;
   }
 
   completeLevel(): void {
     if (this.levelCompleted) {
-        return; // Exit if already completed to prevent multiple saves
+        return; 
     }
-
-    this.levelCompleted = true; // Set flag to true after the first call
+    this.levelCompleted = true;
     this.countdownSubscription?.unsubscribe();
 
     const userProgress = {
@@ -311,15 +233,13 @@ resetFingers(): void {
         completionDate: new Date(),
         levelNumber: this.levelNumber
     };
-
     this.typingGameService.saveProgress(userProgress).subscribe(response => {
         console.log(`Progress saved for Level ${this.levelId}:`, response);
 
-        // Navigate to dashboard after saving progress
         this.router.navigate(['/dashboard'], { queryParams: { userProgress: JSON.stringify(userProgress) } });
     }, error => {
         console.error('Error saving progress:', error);
-        this.levelCompleted = false; // Reset flag on error to allow retry
+        this.levelCompleted = false; 
     });
 }
 

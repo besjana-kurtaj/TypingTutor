@@ -4,28 +4,23 @@
     <span class="spacer"></span>
     <button mat-raised-button color="accent" routerLink="/add-level">Shto nivel</button>
   </mat-toolbar>
-
   <table mat-table [dataSource]="levels" class="mat-elevation-z8">
     <ng-container matColumnDef="levelNumber">
       <th mat-header-cell *matHeaderCellDef> Numri i nivelit </th>
       <td mat-cell *matCellDef="let level"> {{ level.levelNumber }} </td>
     </ng-container>
-
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Emri </th>
       <td mat-cell *matCellDef="let level"> {{ level.name }} </td>
     </ng-container>
-
     <ng-container matColumnDef="difficulty">
       <th mat-header-cell *matHeaderCellDef> Vështirësia </th>
       <td mat-cell *matCellDef="let level"> {{ getDifficultyLabel(level.difficulty) }} </td>
     </ng-container>    
-
     <ng-container matColumnDef="timeLimitInSeconds">
       <th mat-header-cell *matHeaderCellDef> Koha e kufizuar </th>
       <td mat-cell *matCellDef="let level"> {{ level.timeLimitInSeconds }} sekonda </td>
     </ng-container>
-
     <ng-container matColumnDef="actions">
       <th mat-header-cell *matHeaderCellDef> Veprime </th>
       <td mat-cell *matCellDef="let level">

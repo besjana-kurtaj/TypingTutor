@@ -1,49 +1,46 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { StorageService } from '../service/storage.service';
+import { AuthService } from '../service/auth.service';
 import { isPlatformBrowser } from '@angular/common';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnDestroy {
   isAuthenticated = false;
   isAdmin = false;
   isUser = false;
+  private authSubscription?: Subscription;
 
-  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object ) {}
+  constructor(
+    private router: Router, 
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private authService: AuthService
+  ) {}
 
   ngOnInit(): void {
-    this.checkAuthentication();
+    // Subscribe to authentication state changes
+    this.authSubscription = this.authService.authState$.subscribe(authState => {
+      this.isAuthenticated = authState.isAuthenticated;
+      this.isAdmin = authState.isAdmin;
+      this.isUser = authState.isUser;
+      
+      console.log('Auth state updated:', authState);
+    });
   }
 
-  checkAuthentication(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      const token = localStorage.getItem('token');
-      const role = localStorage.getItem('role'); 
-
-      this.isAuthenticated = !!token;
-
-      this.isAdmin = role === '"admin"';
-      this.isUser = role === '"user"';
-
-      console.log('Token:', token);
-      console.log('Role:', role);
-      console.log('Authenticated:', this.isAuthenticated);
-    } else {
-      console.log('Non-browser environment: Skipping authentication check.');
+  ngOnDestroy(): void {
+    if (this.authSubscription) {
+      this.authSubscription.unsubscribe();
     }
   }
 
   logout(): void {
-    localStorage.removeItem('token');
-    localStorage.removeItem('role');
-    this.isAuthenticated = false;
-    this.isAdmin = false;
-    this.isUser = false;
-
+    this.authService.logout();
     // Navigate to login page
     this.router.navigate(['/login']);
   }

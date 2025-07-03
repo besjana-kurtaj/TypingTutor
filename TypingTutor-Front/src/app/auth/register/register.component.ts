@@ -31,13 +31,13 @@ export class RegisterComponent {
     };
 
     this.authService.register(data).subscribe({
-      next: () => {
-        alert('Registration successful');
+      next: (response) => {
+        console.log('Registration response:', response);       
         this.router.navigate(['/login']);
       },
       error: (err) => {
         console.error('Error during registration:', err);
-       
+        this.errorMessage = 'Registration failed. Please try again.';
       }
     });
   }

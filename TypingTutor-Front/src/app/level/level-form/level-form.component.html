@@ -7,13 +7,11 @@
           <mat-label>Numri i nivelit</mat-label>
           <input matInput type="number" placeholder="Shkruani numrin e nivelit" [(ngModel)]="level.levelNumber" name="number" required />
         </mat-form-field>
-
         <mat-form-field appearance="outline" class="half-width">
           <mat-label>Emri</mat-label>
           <input matInput placeholder="Shkruani emrin e nivelit" [(ngModel)]="level.name" name="name" required />
         </mat-form-field>
       </div>
-
       <div class="flex-container">
         <mat-form-field appearance="outline" class="half-width">
           <mat-label>Vështirësia</mat-label>
@@ -24,13 +22,11 @@
             <mat-option [value]="3">E lartë</mat-option>
           </mat-select>
         </mat-form-field>
-
         <mat-form-field appearance="outline" class="half-width">
           <mat-label>Kohëzgjatja (sekonda)</mat-label>
           <input matInput type="number" placeholder="Shkruani kohëzgjatjen" [(ngModel)]="level.timeLimitInSeconds" name="timeLimit" required />
         </mat-form-field>
       </div>
-
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Përshkrimi</mat-label>
         <textarea matInput placeholder="Shto një përshkrim për nivelin" [(ngModel)]="level.description" required name="description"></textarea>

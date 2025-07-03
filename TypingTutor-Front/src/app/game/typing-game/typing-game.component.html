@@ -1,9 +1,7 @@
 <div class="bg-body">
   <div class="typing-game-container">
     <div class="game-section">
-      <h2>Loja e shtypjes - Niveli {{ levelNumber }}</h2>
-  
-      <!-- Text to Type with Real-Time Highlighting -->
+      <h2>Loja e shtypjes - Niveli {{ levelNumber }}</h2>  
       <div class="text-to-type">
         <span *ngFor="let char of textToType.split(''); let i = index">
           <span 
@@ -16,9 +14,7 @@
             {{ char === ' ' ? '\u00A0' : char }} 
           </span>
         </span>
-      </div>
-  
-      <!-- Typing Input -->
+      </div>  
       <div class="typing-input">
         <input 
           type="text" 
@@ -27,17 +23,15 @@
           placeholder="Shkruaj këtu..." 
           [disabled]="levelCompleted"
           autofocus 
+          *ngIf="!levelCompleted"
         />
-      </div>
-  
-      <!-- Completion Message and Next Level Button -->
+      </div>  
       <div class="completion-message">
         <p *ngIf="levelCompleted">Level {{ levelId }} completed!</p>
-        <button (click)="loadNextLevel()">Niveli tjetër</button>
+        <button *ngIf="levelCompleted" (click)="loadNextLevel()">Shko te niveli tjetër</button>
       </div>
       <img id="handImage" src="assets/hints/default.jpg" alt="Hand Position" style="width: 250px; height: 250px;">
-    </div>
-    
+    </div>    
     <div class="statistics-section">
       <h3>Statistikat</h3>
       <div class="metrics">
@@ -52,28 +46,6 @@
         <p><strong>Rezultati:</strong> {{ score }}</p>
         <p><strong>Koha e mbetur:</strong> {{ timer }} sekonda</p>
       </div>
-    </div>
-   
+    </div>   
   </div>
-
-
- 
-   
-<!-- 
-  <div id="hands">
-    <div id="leftHand"></div>
-    <div id="leftThumb"></div>
-    <div id="rightThumb"></div>
-    <div id="rightHand"></div>
-</div> -->
-
 </div>
-<!-- <div>
-  <div id="hands">
-    <span id="leftHand" [ngClass]="leftHandClass"></span>
-    <span id="leftThumb" [ngClass]="leftThumbClass"></span>
-    <span id="rightThumb" [ngClass]="rightThumbClass"></span>
-    <span id="rightHand" [ngClass]="rightHandClass"></span>
-  </div>
- 
-</div> -->
